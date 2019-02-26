@@ -12,8 +12,10 @@ Binv = c.get_inverse(c.get_B_matrix())
 for file in files:
     start = time.time()
     n = nxspe(file)
-    Uinv = c.get_inverse(c.get_U_matrix(n.psi))
+#    Uinv = c.get_inverse(c.get_U_matrix(n.psi))
+    Uinv = c.get_U_matrix(n.psi)
     n.convert_to_hkl(Binv,Uinv)
+    n.write_to_file()
     end = time.time()
     print ('Processed ', file, ' in ', end-start, ' seconds.')
 

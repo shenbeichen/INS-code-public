@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import h5py as h5
 import numpy as np
 from itertools import chain
@@ -18,6 +19,7 @@ class nxspe:
         self.polar = (np.nan_to_num( np.array( f['data/data/polar'] ) ) * np.pi / 180.)
         self.intensity = np.nan_to_num( np.array( f['data/data/data'] ) )
         self.energy = np.nan_to_num( np.array( f['data/data/energy'] ) )
+        f.close()
         self.np = self.polar.size
         self.ne = self.energy.size-1
         self.rebinned_energy = (self.energy[0:self.ne]+self.energy[1:self.ne+1])*0.5
@@ -46,7 +48,21 @@ class nxspe:
         self.ql3 = np.fromiter( chain.from_iterable(ql3),dtype=float )
         self.hkl = np.matmul( BU, [self.ql1, self.ql2, self.ql3] ).T
 
-
+    def write_to_file( self ):
+        # This is where we write data to hdf5 groups
+        exists = os.path.isfile('fractional_coordinates.hdf5')
+        if exists:
+            # Store configuration file values
+            f = h5.File( 'fractional_coordinates.hdf5', 'a' )
+        else:
+            # Keep presets
+            f = h5.File( 'fractional_coordinates.hdf5', 'w' )
+ 
+        g = f.create_group( self.filename )
+        g.create_dataset('hkl', data=self.hkl,compression='gzip')
+        g.create_dataset('energy', data=self.incident_energy-self.energy,compression='gzip')
+        g.create_dataset('intensity', data=self.intensity,compression='gzip')
+        f.close()
 
 
 
