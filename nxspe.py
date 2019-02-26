@@ -4,6 +4,7 @@ import h5py as h5
 import numpy as np
 from itertools import chain
 from numpy import linalg as LA
+import crystal_structure as cs
 
 class nxspe:
     
@@ -20,43 +21,37 @@ class nxspe:
         self.np = self.polar.size
         self.ne = self.energy.size-1
         self.rebinned_energy = (self.energy[0:self.ne]+self.energy[1:self.ne+1])*0.5
-        self.h = np.zeros( self.np * self.ne )
-        self.k = np.zeros( self.np * self.ne )
-        self.l = np.zeros( self.np * self.ne )
+        self.ql1 = np.zeros( self.np * self.ne )
+        self.ql2 = np.zeros( self.np * self.ne )
+        self.ql3 = np.zeros( self.np * self.ne )
+        self.hkl = np.zeros( (self.np * self.ne, 3) )
 
 
-    def convert_to_hkl( self ):
+    def convert_to_hkl( self, Binv, Uinv ):
         # Conversion factor: 1 mev --> 0.6947 1/A for cold neutrons
         # This value might be wrong
         unitscaling = 0.694692092176654
-        h = []
-        k = []
-        l = []
+        ql1 = []
+        ql2 = []
+        ql3 = []
+        BU = np.matmul(Binv,Uinv)
         k_i = self.incident_energy*unitscaling
         for energy in self.rebinned_energy:
             k_f = energy*unitscaling
-            h.append(-k_f*np.sin(self.polar)*np.cos(self.azimuthal))
-            k.append(-k_f*np.sin(self.polar)*np.sin(self.azimuthal))
-            l.append(k_i-k_f*np.cos(self.polar))
-        self.h = np.array( chain.from_iterable(h) )
-        self.k = np.array( chain.from_iterable(k) )
-        self.l = np.array( chain.from_iterable(l) )
+            ql1.append((k_i-k_f*np.cos(self.polar))/(2.*np.pi))
+            ql2.append(-k_f*np.sin(self.polar)*np.cos(self.azimuthal)/(2.*np.pi))
+            ql3.append(-k_f*np.sin(self.polar)*np.sin(self.azimuthal)/(2.*np.pi))
+        self.ql1 = np.fromiter( chain.from_iterable(ql1),dtype=float )
+        self.ql2 = np.fromiter( chain.from_iterable(ql2),dtype=float )
+        self.ql3 = np.fromiter( chain.from_iterable(ql3),dtype=float )
+        self.hkl = np.matmul( BU, [self.ql1, self.ql2, self.ql3] ).T
 
-    def get_B_matrix( self, a, b, c  ):
-        # read in primitive vectors
-        # convert to reciprocal but drop the 2*pi
-        a_star = np.cross(b,c)/np.dot(a,np.cross(b,c))
-        b_star = np.cross(c,a)/np.dot(b,np.cross(c,a))
-        c_star = np.cross(a,b)/np.dot(c,np.cross(a,b))
 
-    def get_U_matrix( self, u , v ):
-        t1 = u / LA.norm(u)
-        t2 = v / LA.norm(v)
-        t3 = np.cross(t1,t2)
-        U_mat = [[t1[0]*np.sin(self.psi), t2[0]*np.cos(self.psi),0.],
-                 [0., 0.,t3[2]*1.],
-             [t1[2]*u[2]*np.cos(self.psi), -t2[2]*np.sin(self.psi),0.]]
-        return U_mat
+
+
+
+
+
 
 
 

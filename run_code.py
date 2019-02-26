@@ -2,15 +2,18 @@
 
 from setup1 import *
 from nxspe import *
+from crystal_structure import *
+import time
 
-set_working_directory()
+path = set_working_directory()
 files = get_file_list()
-
+c = crystal_structure( 'crystal_structure.info' )
+Binv = c.get_inverse(c.get_B_matrix())
 for file in files:
-    print ('Reading file', file)
+    start = time.time()
     n = nxspe(file)
-    n.convert_to_hkl()
-#print(n.incident_energy)
-#    n.set_nxspe_info()
-#    n.set_data()
+    Uinv = c.get_inverse(c.get_U_matrix(n.psi))
+    n.convert_to_hkl(Binv,Uinv)
+    end = time.time()
+    print ('Processed ', file, ' in ', end-start, ' seconds.')
 

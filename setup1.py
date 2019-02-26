@@ -10,6 +10,7 @@ def set_working_directory():
     # Change working directory to the specified directory
     os.chdir( str( master.directory ) )
     print( 'Current working directory is: ',os.getcwd() )
+    return str( master.directory )
     
 def get_file_list( ):
     filenames = glob.glob( '*.nxspe' )
