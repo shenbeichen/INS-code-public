@@ -8,17 +8,21 @@ class crystal_structure:
     def __init__ (self, filename):
         self.fname = filename
         self.crystal_info = np.loadtxt(self.fname)
-        self.check()
+        self.check() # check if the
         
         if self.crystal_info.shape[0] == 4:
             self.alatt = self.crystal_info[0]
             self.ang = np.deg2rad(self.crystal_info[1])
             self.u = self.crystal_info[2]
             self.v = self.crystal_info[3]
+        else:
+            #TODO
+            print("Unable to deal with vectors format for now!")
         
         sin_ang, cos_ang = np.sin(self.ang), np.cos(self.ang)
         V = np.sqrt(np.abs(1 - np.sum(cos_ang**2) + 2 * np.prod(cos_ang)))
         
+        # calculated the reciprocal lattice parameters
         self.alatt_ = 2 * np.pi * sin_ang / self.alatt / V
         self.ang_ = np.arccos( (np.roll(cos_ang, 1) * np.roll(cos_ang, 2) - cos_ang) / \
                     (np.roll(sin_ang, 1) * np.roll(sin_ang, 2)) )     
@@ -34,10 +38,15 @@ class crystal_structure:
     def get_UB_matrix_inv(self):
         a_, b_, c_ = self.alatt_
         alpha_, beta_, gamma_ = self.ang_
+        
+        # B matrix: to transform components of a vector in r.l.u.
+        #           to those in crystal cartesian coordinates.
         self.B = np.array([[a_, b_ * np.cos(gamma_),  c_ * np.cos(beta_)], \
                            [ 0, b_ * np.sin(gamma_), -c_ * np.sin(beta_) * np.cos(self.ang[0]) ], \
                            [ 0,                   0,  2 * np.pi / self.alatt[-1]]])
         
+        # U matrix: to transform components of a vector in the crystal Cartesian coords
+        #           to orthonormal frame defined by (u, v).
         u_col, v_col = np.expand_dims(self.u, 1), np.expand_dims(self.v, 1)
         u_c, v_c = np.squeeze(np.matmul(self.B, [u_col, v_col]))
         
@@ -48,7 +57,7 @@ class crystal_structure:
         U = np.vstack((e1, e2, e3))
         self.U = U / det(U)
         
-        return inv(np.matmul(self.U, self.B))
+        return inv(np.matmul(self.U, self.B)) # return inverse of UB: (u, v) --> r.l.u
 
 
 
