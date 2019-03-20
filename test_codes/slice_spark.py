@@ -2,13 +2,12 @@
 # coding: utf-8
 
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, size, udf, sum, count
-
-from pyspark.sql.functions import UserDefinedFunction
+from pyspark.sql.functions import col
 from pyspark.sql.types import *
+import pyspark.sql.functions as func
 
 import numpy as np
-from math import floor, ceil
+from math import ceil
 from itertools import zip_longest
 
 
@@ -56,8 +55,9 @@ def cut(infile, QE_info, sorted_res=True):
         if steps[col_ix] != 0 and steps[col_ix] != ends[col_ix] - starts[col_ix]:
             res_heads.append(col_name+'_bin_ix')
             res_shape.append( ceil((ends[col_ix] - starts[col_ix]) / steps[col_ix]) )
-            find_ix = UserDefinedFunction(lambda x: floor( (x-starts[col_ix])/steps[col_ix] ), IntegerType())
-            df_in_range = df_in_range.withColumn(col_name+'_bin_ix', find_ix(col_name))
+            #find_ix = UserDefinedFunction(lambda x: floor( (x-starts[col_ix])/steps[col_ix] ), IntegerType())
+            df_in_range = df_in_range.withColumn(col_name+'_bin_ix', \
+                                                 func.floor( (col(col_name)-starts[col_ix])/steps[col_ix] ))
     
     if not res_heads: # means 0-Dimension
         spark.stop()
