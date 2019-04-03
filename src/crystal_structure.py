@@ -48,7 +48,7 @@ class crystal_structure:
         U = np.vstack((e1, e2, e3))
         self.U = U / det(U)
         
-        return inv(np.matmul(self.U, self.B))
+        return np.array(inv(np.matmul(self.U, self.B)))
 
 
 
