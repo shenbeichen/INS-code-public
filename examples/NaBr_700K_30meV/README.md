@@ -7,6 +7,7 @@ This is an example of NaBr at 700K with Ei=30meV.
 3. I also attached sricpts for folding back the whole dataset, in the folder named 'q-offset-all' and 'cut_with_mps_all'
 
 4. ON NERSC (interactive mode):
+
 salloc -N 2 -t 30 -C haswell -q interactive --image=nersc/spark-2.3.0:v1 --volume="/global/cscratch1/sd/<user_name>/tmpfiles:/tmp:perNodeCache=size=200G"
 
 module load python3
