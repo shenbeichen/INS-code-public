@@ -14,40 +14,25 @@ def neighboors(x):
     return [list(i) for i in set(itertools.product(*fc_))]
 
 
-def fold(df, W, BZs):
-    if type(BZs) == np.ndarray:
-        BZs = BZs.tolist()
-    else:
-        assert isinstance(BZs, list), "Input BZs must be a list or numpy array!"
-    
-    schema = StructType([StructField("in_", FloatType(), False), \
-                         StructField("H_", FloatType(), False), \
-                         StructField("K_", FloatType(), False), \
-                         StructField("L_", FloatType(), False)]) 
+def fold_all(df, W):
+    schema = StructType([StructField("x", FloatType(), False), \
+                         StructField("y", FloatType(), False), \
+                         StructField("z", FloatType(), False), \
+                         StructField("Q2", FloatType(), False)]) 
     def in_BZs(H, K, L):
         arr_HKL = np.array([H, K, L])
         near_HKLs = neighboors(arr_HKL) # is a list
-        for _near_HKL in near_HKLs:
-            if _near_HKL in BZs:
-                break
-        else:
-            return (0, 0, 0, 0)
-    
         arr_Q = np.matmul(arr_HKL, W.T)
         near_Qs = np.matmul(np.array(near_HKLs), W.T)
         dist = np.sum((near_Qs - arr_Q) ** 2, axis=1)
-    
-        BZ_HKL = near_HKLs[np.argmin(dist)]
-        reduced_HKL = arr_HKL - BZ_HKL
-        return (float(BZ_HKL in BZs), *list(map(float, reduced_HKL)))
+        
+        ix_min = np.argmin(dist)
+        BZ_HKL = near_HKLs[ix_min]
+        reduced_Q = arr_Q - near_Qs[ix_min]
+        return (*list(map(float, reduced_Q)), float(np.sum(arr_Q ** 2)))
     udf_in_BZs = udf(in_BZs, schema)
     
     folded_df = df.withColumn("BZ", func.explode(func.array(udf_in_BZs(df.H, df.K, df.L))))
-    folded_df = folded_df.select("H", "K", "L", "E", "I", "BZ.*").cache()
-    folded_df = folded_df.filter(folded_df["in_"]== 1.0).drop("in_")
+    folded_df = folded_df.select("BZ.*", "E", "I", "I_bg").cache()
     return folded_df
-
-
-
-
 
