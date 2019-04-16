@@ -1,0 +1,2206 @@
+SPARK_HOME=/usr/local/bin/spark-2.3.0
+SPARK_HELPER=/usr/local/bin/spark-2.3.0/helpers/
+SPARK_LOCAL_DIRS=/tmp
+SPARK_CONF_DIR=/global/cscratch1/sd/yshen/spark/19973392/conf
+SPARK_NO_DAEMONIZE=no
+SPARK_VERSION=2.3.0
+SPARK_MASTER_HOST=nid01201
+SPARKURL=spark://nid01201:7077
+SPARK_SLAVES=/global/cscratch1/sd/yshen/spark/19973392/slaves
+SPARK_WORKER_DIR=/global/cscratch1/sd/yshen/spark/19973392
+calling srun -N 1 -n 1 -x nid01201 env -u SHIFTER_VOLUME shifter /usr/local/bin/spark-2.3.0/sbin/start-slave.sh spark://nid01201:7077
+calling /usr/local/bin/spark-2.3.0/sbin/spark-config.sh
+calling shifter /usr/local/bin/spark-2.3.0/sbin/start-master.sh
+starting org.apache.spark.deploy.master.Master, logging to /global/cscratch1/sd/yshen/spark/19973392/spark-yshen-org.apache.spark.deploy.master.Master-1-nid01201.out
+starting org.apache.spark.deploy.worker.Worker, logging to /global/cscratch1/sd/yshen/spark/19973392/spark-yshen-org.apache.spark.deploy.worker.Worker-1-nid02261.out
+-------------------------Peak 1 -------------------------
+Peak: [-2. -2. -2.]
+iter 1, direction X...
+Fit result: center = -1.945831767866464
+Fit Statistics: chi-sqr = 8.740e-05,
+                reduce chi-sqr = 1.900e-06
+                Akaike info crit = -6.549e+02
+                Bayesian info crit = -6.472e+02
+iter 1, direction Y...
+Fit result: center = -2.032461256867982
+Fit Statistics: chi-sqr = 2.141e-05,
+                reduce chi-sqr = 4.655e-07
+                Akaike info crit = -7.252e+02
+                Bayesian info crit = -7.175e+02
+iter 1, direction Z...
+Fit result: center = -1.9840895203198226
+Fit Statistics: chi-sqr = 3.205e-04,
+                reduce chi-sqr = 6.968e-06
+                Akaike info crit = -5.899e+02
+                Bayesian info crit = -5.822e+02
+Position update: [-1.94583177 -2.03246126 -1.98408952]
+iter 2, direction X...
+Fit result: center = -1.946002126528651
+Fit Statistics: chi-sqr = 1.020e-04,
+                reduce chi-sqr = 2.216e-06
+                Akaike info crit = -6.472e+02
+                Bayesian info crit = -6.395e+02
+iter 2, direction Y...
+Fit result: center = -2.0337225517452255
+Fit Statistics: chi-sqr = 2.340e-05,
+                reduce chi-sqr = 5.087e-07
+                Akaike info crit = -7.207e+02
+                Bayesian info crit = -7.131e+02
+iter 2, direction Z...
+Fit result: center = -1.9846484063057503
+Fit Statistics: chi-sqr = 3.728e-04,
+                reduce chi-sqr = 8.104e-06
+                Akaike info crit = -5.823e+02
+                Bayesian info crit = -5.747e+02
+Final position: [-1.94600213 -2.03372255 -1.98464841]
+Time used: 284.39 seconds.
+-------------------------Peak 2 -------------------------
+Peak: [-2. -2. -4.]
+iter 1, direction X...
+Fit result: center = -1.9071044236970043
+Fit Statistics: chi-sqr = 1.343e-04,
+                reduce chi-sqr = 2.919e-06
+                Akaike info crit = -6.334e+02
+                Bayesian info crit = -6.257e+02
+iter 1, direction Y...
+Fit result: center = -2.046289110273373
+Fit Statistics: chi-sqr = 1.009e-04,
+                reduce chi-sqr = 2.193e-06
+                Akaike info crit = -6.477e+02
+                Bayesian info crit = -6.400e+02
+iter 1, direction Z...
+Fit result: center = -3.9759055991701486
+Fit Statistics: chi-sqr = 1.731e-04,
+                reduce chi-sqr = 3.763e-06
+                Akaike info crit = -6.207e+02
+                Bayesian info crit = -6.130e+02
+Position update: [-1.90710442 -2.04628911 -3.9759056 ]
+iter 2, direction X...
+Fit result: center = -1.9001577270900367
+Fit Statistics: chi-sqr = 1.636e-04,
+                reduce chi-sqr = 3.557e-06
+                Akaike info crit = -6.235e+02
+                Bayesian info crit = -6.159e+02
+iter 2, direction Y...
+Fit result: center = -2.052913863465224
+Fit Statistics: chi-sqr = 7.419e-05,
+                reduce chi-sqr = 1.613e-06
+                Akaike info crit = -6.630e+02
+                Bayesian info crit = -6.554e+02
+iter 2, direction Z...
+Fit result: center = -3.975652440724453
+Fit Statistics: chi-sqr = 1.777e-04,
+                reduce chi-sqr = 3.864e-06
+                Akaike info crit = -6.194e+02
+                Bayesian info crit = -6.117e+02
+Final position: [-1.90015773 -2.05291386 -3.97565244]
+Time used: 119.02 seconds.
+-------------------------Peak 3 -------------------------
+Peak: [ 0.  0. -3.]
+iter 1, direction X...
+Fit result: center = 0.0816271856304562
+Fit Statistics: chi-sqr = 9.004e-05,
+                reduce chi-sqr = 1.957e-06
+                Akaike info crit = -6.534e+02
+                Bayesian info crit = -6.457e+02
+iter 1, direction Y...
+Fit result: center = -0.025972226531003704
+Fit Statistics: chi-sqr = 3.241e-05,
+                reduce chi-sqr = 7.045e-07
+                Akaike info crit = -7.045e+02
+                Bayesian info crit = -6.968e+02
+iter 1, direction Z...
+Fit result: center = -2.97581315849932
+Fit Statistics: chi-sqr = 3.197e-05,
+                reduce chi-sqr = 1.066e-06
+                Akaike info crit = -4.638e+02
+                Bayesian info crit = -4.577e+02
+Position update: [ 0.08162719 -0.02597223 -2.97581316]
+iter 2, direction X...
+Fit result: center = 0.08096996441715067
+Fit Statistics: chi-sqr = 1.108e-04,
+                reduce chi-sqr = 2.409e-06
+                Akaike info crit = -6.430e+02
+                Bayesian info crit = -6.353e+02
+iter 2, direction Y...
+Fit result: center = -0.029708333476788938
+Fit Statistics: chi-sqr = 3.569e-05,
+                reduce chi-sqr = 7.758e-07
+                Akaike info crit = -6.996e+02
+                Bayesian info crit = -6.920e+02
+iter 2, direction Z...
+Fit result: center = -2.9711924885951873
+Fit Statistics: chi-sqr = 3.208e-05,
+                reduce chi-sqr = 1.146e-06
+                Akaike info crit = -4.340e+02
+                Bayesian info crit = -4.281e+02
+Final position: [ 0.08096996 -0.02970833 -2.97119249]
+Time used: 183.56 seconds.
+-------------------------Peak 4 -------------------------
+Peak: [-1. -1. -1.]
+iter 1, direction X...
+Fit result: center = -0.9684342949350199
+Fit Statistics: chi-sqr = 1.420e-05,
+                reduce chi-sqr = 3.086e-07
+                Akaike info crit = -7.457e+02
+                Bayesian info crit = -7.381e+02
+iter 1, direction Y...
+Fit result: center = -1.021387116062135
+Fit Statistics: chi-sqr = 1.359e-05,
+                reduce chi-sqr = 2.955e-07
+                Akaike info crit = -7.479e+02
+                Bayesian info crit = -7.402e+02
+iter 1, direction Z...
+Fit result: center = -0.9885781487231053
+Fit Statistics: chi-sqr = 1.739e-05,
+                reduce chi-sqr = 3.780e-07
+                Akaike info crit = -7.356e+02
+                Bayesian info crit = -7.279e+02
+Position update: [-0.96843429 -1.02138712 -0.98857815]
+iter 2, direction X...
+Fit result: center = -0.9697762356631165
+Fit Statistics: chi-sqr = 1.992e-05,
+                reduce chi-sqr = 4.330e-07
+                Akaike info crit = -7.288e+02
+                Bayesian info crit = -7.211e+02
+iter 2, direction Y...
+Fit result: center = -1.0216657523671813
+Fit Statistics: chi-sqr = 1.414e-05,
+                reduce chi-sqr = 3.073e-07
+                Akaike info crit = -7.459e+02
+                Bayesian info crit = -7.383e+02
+iter 2, direction Z...
+Fit result: center = -0.9893548868318663
+Fit Statistics: chi-sqr = 2.724e-05,
+                reduce chi-sqr = 5.922e-07
+                Akaike info crit = -7.131e+02
+                Bayesian info crit = -7.055e+02
+Final position: [-0.96977624 -1.02166575 -0.98935489]
+Time used: 288.62 seconds.
+-------------------------Peak 5 -------------------------
+Peak: [-3. -3. -3.]
+iter 1, direction X...
+Fit result: center = -2.9094075710909753
+Fit Statistics: chi-sqr = 3.147e-05,
+                reduce chi-sqr = 6.841e-07
+                Akaike info crit = -7.059e+02
+                Bayesian info crit = -6.983e+02
+iter 1, direction Y...
+Fit result: center = -3.034439423351223
+Fit Statistics: chi-sqr = 1.459e-05,
+                reduce chi-sqr = 3.172e-07
+                Akaike info crit = -7.444e+02
+                Bayesian info crit = -7.367e+02
+iter 1, direction Z...
+Fit result: center = -2.9866519848700417
+Fit Statistics: chi-sqr = 1.659e-05,
+                reduce chi-sqr = 3.607e-07
+                Akaike info crit = -7.379e+02
+                Bayesian info crit = -7.303e+02
+Position update: [-2.90940757 -3.03443942 -2.98665198]
+iter 2, direction X...
+Fit result: center = -2.9080905303257363
+Fit Statistics: chi-sqr = 4.281e-05,
+                reduce chi-sqr = 9.306e-07
+                Akaike info crit = -6.905e+02
+                Bayesian info crit = -6.829e+02
+iter 2, direction Y...
+Fit result: center = -3.047819493249981
+Fit Statistics: chi-sqr = 6.234e-05,
+                reduce chi-sqr = 1.355e-06
+                Akaike info crit = -6.717e+02
+                Bayesian info crit = -6.641e+02
+iter 2, direction Z...
+Fit result: center = -2.991792791918875
+Fit Statistics: chi-sqr = 2.720e-05,
+                reduce chi-sqr = 5.914e-07
+                Akaike info crit = -7.132e+02
+                Bayesian info crit = -7.056e+02
+Final position: [-2.90809053 -3.04781949 -2.99179279]
+Time used: 202.28 seconds.
+-------------------------Peak 6 -------------------------
+Peak: [-2. -2. -1.]
+iter 1, direction X...
+Fit result: center = -1.9559281280510663
+Fit Statistics: chi-sqr = 1.261e-04,
+                reduce chi-sqr = 2.742e-06
+                Akaike info crit = -6.365e+02
+                Bayesian info crit = -6.289e+02
+iter 1, direction Y...
+Fit result: center = -2.020872864227104
+Fit Statistics: chi-sqr = 4.739e-05,
+                reduce chi-sqr = 1.030e-06
+                Akaike info crit = -6.855e+02
+                Bayesian info crit = -6.778e+02
+iter 1, direction Z...
+Fit result: center = -1.0033237051390431
+Fit Statistics: chi-sqr = 9.478e-05,
+                reduce chi-sqr = 2.060e-06
+                Akaike info crit = -6.508e+02
+                Bayesian info crit = -6.432e+02
+Position update: [-1.95592813 -2.02087286 -1.00332371]
+iter 2, direction X...
+Fit result: center = -1.9553494754732612
+Fit Statistics: chi-sqr = 7.754e-05,
+                reduce chi-sqr = 1.686e-06
+                Akaike info crit = -6.608e+02
+                Bayesian info crit = -6.532e+02
+iter 2, direction Y...
+Fit result: center = -2.020694083662866
+Fit Statistics: chi-sqr = 1.398e-04,
+                reduce chi-sqr = 3.040e-06
+                Akaike info crit = -6.314e+02
+                Bayesian info crit = -6.237e+02
+iter 2, direction Z...
+Fit result: center = -1.0017750063775026
+Fit Statistics: chi-sqr = 1.201e-04,
+                reduce chi-sqr = 2.611e-06
+                Akaike info crit = -6.390e+02
+                Bayesian info crit = -6.313e+02
+Final position: [-1.95534948 -2.02069408 -1.00177501]
+Time used: 200.90 seconds.
+-------------------------Peak 7 -------------------------
+Peak: [-3. -3. -2.]
+iter 1, direction X...
+Fit result: center = -2.9371278565714567
+Fit Statistics: chi-sqr = 6.758e-05,
+                reduce chi-sqr = 1.469e-06
+                Akaike info crit = -6.677e+02
+                Bayesian info crit = -6.601e+02
+iter 1, direction Y...
+Fit result: center = -3.027951958329535
+Fit Statistics: chi-sqr = 1.041e-04,
+                reduce chi-sqr = 2.263e-06
+                Akaike info crit = -6.461e+02
+                Bayesian info crit = -6.385e+02
+iter 1, direction Z...
+Fit result: center = -2.001964469640936
+Fit Statistics: chi-sqr = 1.458e-03,
+                reduce chi-sqr = 3.170e-05
+                Akaike info crit = -5.141e+02
+                Bayesian info crit = -5.065e+02
+Position update: [-2.93712786 -3.02795196 -2.00196447]
+iter 2, direction X...
+Fit result: center = -2.935616431648739
+Fit Statistics: chi-sqr = 6.676e-05,
+                reduce chi-sqr = 1.451e-06
+                Akaike info crit = -6.683e+02
+                Bayesian info crit = -6.607e+02
+iter 2, direction Y...
+Fit result: center = -3.031554909321056
+Fit Statistics: chi-sqr = 9.327e-05,
+                reduce chi-sqr = 2.028e-06
+                Akaike info crit = -6.516e+02
+                Bayesian info crit = -6.440e+02
+iter 2, direction Z...
+Fit result: center = -1.9987772746225683
+Fit Statistics: chi-sqr = 2.465e-03,
+                reduce chi-sqr = 5.359e-05
+                Akaike info crit = -4.879e+02
+                Bayesian info crit = -4.802e+02
+Final position: [-2.93561643 -3.03155491 -1.99877727]
+Time used: 197.90 seconds.
+-------------------------Peak 8 -------------------------
+Peak: [-1. -1. -2.]
+iter 1, direction X...
+Fit result: center = -0.9532918086809173
+Fit Statistics: chi-sqr = 5.062e-04,
+                reduce chi-sqr = 1.100e-05
+                Akaike info crit = -5.670e+02
+                Bayesian info crit = -5.594e+02
+iter 1, direction Y...
+Fit result: center = -1.0315461079089165
+Fit Statistics: chi-sqr = 3.371e-04,
+                reduce chi-sqr = 7.329e-06
+                Akaike info crit = -5.874e+02
+                Bayesian info crit = -5.797e+02
+iter 1, direction Z...
+Fit result: center = -2.002662975998327
+Fit Statistics: chi-sqr = 1.090e-03,
+                reduce chi-sqr = 2.369e-05
+                Akaike info crit = -5.287e+02
+                Bayesian info crit = -5.210e+02
+Position update: [-0.95329181 -1.03154611 -2.00266298]
+iter 2, direction X...
+Fit result: center = -0.9538676508171268
+Fit Statistics: chi-sqr = 5.301e-04,
+                reduce chi-sqr = 1.152e-05
+                Akaike info crit = -5.647e+02
+                Bayesian info crit = -5.571e+02
+iter 2, direction Y...
+Fit result: center = -1.0278286702375006
+Fit Statistics: chi-sqr = 3.408e-04,
+                reduce chi-sqr = 7.408e-06
+                Akaike info crit = -5.868e+02
+                Bayesian info crit = -5.792e+02
+iter 2, direction Z...
+Fit result: center = -2.0004581249639197
+Fit Statistics: chi-sqr = 9.573e-04,
+                reduce chi-sqr = 2.081e-05
+                Akaike info crit = -5.352e+02
+                Bayesian info crit = -5.275e+02
+Final position: [-0.95386765 -1.02782867 -2.00045812]
+Time used: 193.94 seconds.
+-------------------------Peak 9 -------------------------
+Peak: [-1. -1. -4.]
+iter 1, direction X...
+Fit result: center = -0.9071652330346993
+Fit Statistics: chi-sqr = 9.469e-05,
+                reduce chi-sqr = 2.058e-06
+                Akaike info crit = -6.508e+02
+                Bayesian info crit = -6.432e+02
+iter 1, direction Y...
+Fit result: center = -1.0480149000087065
+Fit Statistics: chi-sqr = 8.585e-05,
+                reduce chi-sqr = 1.866e-06
+                Akaike info crit = -6.557e+02
+                Bayesian info crit = -6.481e+02
+iter 1, direction Z...
+Fit result: center = -3.975237428926515
+Fit Statistics: chi-sqr = 3.114e-04,
+                reduce chi-sqr = 6.919e-06
+                Akaike info crit = -5.784e+02
+                Bayesian info crit = -5.708e+02
+Position update: [-0.90716523 -1.0480149  -3.97523743]
+iter 2, direction X...
+Fit result: center = -0.9022226386129135
+Fit Statistics: chi-sqr = 9.966e-05,
+                reduce chi-sqr = 2.166e-06
+                Akaike info crit = -6.483e+02
+                Bayesian info crit = -6.406e+02
+iter 2, direction Y...
+Fit result: center = -1.054390329949051
+Fit Statistics: chi-sqr = 1.296e-04,
+                reduce chi-sqr = 2.818e-06
+                Akaike info crit = -6.351e+02
+                Bayesian info crit = -6.275e+02
+iter 2, direction Z...
+Fit result: center = -3.972656772381292
+Fit Statistics: chi-sqr = 3.227e-04,
+                reduce chi-sqr = 7.016e-06
+                Akaike info crit = -5.895e+02
+                Bayesian info crit = -5.819e+02
+Final position: [-0.90222264 -1.05439033 -3.97265677]
+Time used: 187.35 seconds.
+-------------------------Peak 10 -------------------------
+Peak: [-3. -3. -4.]
+iter 1, direction X...
+Fit result: center = -2.8975872285315636
+Fit Statistics: chi-sqr = 1.164e-04,
+                reduce chi-sqr = 2.531e-06
+                Akaike info crit = -6.405e+02
+                Bayesian info crit = -6.329e+02
+iter 1, direction Y...
+Fit result: center = -3.036727626465829
+Fit Statistics: chi-sqr = 1.051e-04,
+                reduce chi-sqr = 2.285e-06
+                Akaike info crit = -6.456e+02
+                Bayesian info crit = -6.380e+02
+iter 1, direction Z...
+Fit result: center = -3.9752506422014298
+Fit Statistics: chi-sqr = 1.991e-04,
+                reduce chi-sqr = 4.329e-06
+                Akaike info crit = -6.137e+02
+                Bayesian info crit = -6.060e+02
+Position update: [-2.89758723 -3.03672763 -3.97525064]
+iter 2, direction X...
+Fit result: center = -2.8901790183761107
+Fit Statistics: chi-sqr = 1.600e-04,
+                reduce chi-sqr = 3.479e-06
+                Akaike info crit = -6.246e+02
+                Bayesian info crit = -6.170e+02
+iter 2, direction Y...
+Fit result: center = -3.0534085704764133
+Fit Statistics: chi-sqr = 1.589e-04,
+                reduce chi-sqr = 3.455e-06
+                Akaike info crit = -6.250e+02
+                Bayesian info crit = -6.173e+02
+iter 2, direction Z...
+Fit result: center = -3.9794720004811324
+Fit Statistics: chi-sqr = 2.301e-04,
+                reduce chi-sqr = 5.003e-06
+                Akaike info crit = -6.064e+02
+                Bayesian info crit = -5.988e+02
+Final position: [-2.89017902 -3.05340857 -3.979472  ]
+Time used: 170.85 seconds.
+-------------------------Peak 11 -------------------------
+Peak: [0. 0. 0.]
+iter 1, direction X...
+Fit result: center = 0.011453439271596786
+Fit Statistics: chi-sqr = 2.306e-03,
+                reduce chi-sqr = 5.012e-05
+                Akaike info crit = -4.912e+02
+                Bayesian info crit = -4.836e+02
+iter 1, direction Y...
+Fit result: center = 0.008440055603200188
+Fit Statistics: chi-sqr = 2.275e-03,
+                reduce chi-sqr = 4.946e-05
+                Akaike info crit = -4.919e+02
+                Bayesian info crit = -4.842e+02
+iter 1, direction Z...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 183.08 seconds.
+-------------------------Peak 12 -------------------------
+Peak: [-2. -2. -3.]
+iter 1, direction X...
+Fit result: center = -1.9177992469556937
+Fit Statistics: chi-sqr = 2.294e-05,
+                reduce chi-sqr = 4.988e-07
+                Akaike info crit = -7.217e+02
+                Bayesian info crit = -7.141e+02
+iter 1, direction Y...
+Fit result: center = -2.037785607676648
+Fit Statistics: chi-sqr = 1.188e-05,
+                reduce chi-sqr = 2.583e-07
+                Akaike info crit = -7.546e+02
+                Bayesian info crit = -7.470e+02
+iter 1, direction Z...
+Fit result: center = -2.9812241036677283
+Fit Statistics: chi-sqr = 8.354e-04,
+                reduce chi-sqr = 1.816e-05
+                Akaike info crit = -5.420e+02
+                Bayesian info crit = -5.343e+02
+Position update: [-1.91779925 -2.03778561 -2.9812241 ]
+iter 2, direction X...
+Fit result: center = -1.9167589344328844
+Fit Statistics: chi-sqr = 2.851e-05,
+                reduce chi-sqr = 6.198e-07
+                Akaike info crit = -7.109e+02
+                Bayesian info crit = -7.032e+02
+iter 2, direction Y...
+Fit result: center = -2.044632807397163
+Fit Statistics: chi-sqr = 2.589e-05,
+                reduce chi-sqr = 5.629e-07
+                Akaike info crit = -7.157e+02
+                Bayesian info crit = -7.080e+02
+iter 2, direction Z...
+Fit result: center = -2.981742056738534
+Fit Statistics: chi-sqr = 8.860e-04,
+                reduce chi-sqr = 1.926e-05
+                Akaike info crit = -5.390e+02
+                Bayesian info crit = -5.314e+02
+Final position: [-1.91675893 -2.04463281 -2.98174206]
+Time used: 165.20 seconds.
+-------------------------Peak 13 -------------------------
+Peak: [-1. -1. -3.]
+iter 1, direction X...
+Fit result: center = -0.9276562375766267
+Fit Statistics: chi-sqr = 1.770e-05,
+                reduce chi-sqr = 3.848e-07
+                Akaike info crit = -7.347e+02
+                Bayesian info crit = -7.270e+02
+iter 1, direction Y...
+Fit result: center = -1.0445709300613304
+Fit Statistics: chi-sqr = 1.491e-05,
+                reduce chi-sqr = 3.242e-07
+                Akaike info crit = -7.433e+02
+                Bayesian info crit = -7.356e+02
+iter 1, direction Z...
+Fit result: center = -2.9804207343275233
+Fit Statistics: chi-sqr = 5.100e-04,
+                reduce chi-sqr = 1.109e-05
+                Akaike info crit = -5.667e+02
+                Bayesian info crit = -5.590e+02
+Position update: [-0.92765624 -1.04457093 -2.98042073]
+iter 2, direction X...
+Fit result: center = -0.9271486878292463
+Fit Statistics: chi-sqr = 4.105e-05,
+                reduce chi-sqr = 8.924e-07
+                Akaike info crit = -6.926e+02
+                Bayesian info crit = -6.850e+02
+iter 2, direction Y...
+Fit result: center = -1.0461286132058951
+Fit Statistics: chi-sqr = 1.711e-05,
+                reduce chi-sqr = 3.719e-07
+                Akaike info crit = -7.364e+02
+                Bayesian info crit = -7.288e+02
+iter 2, direction Z...
+Fit result: center = -2.979087907091248
+Fit Statistics: chi-sqr = 5.391e-04,
+                reduce chi-sqr = 1.172e-05
+                Akaike info crit = -5.639e+02
+                Bayesian info crit = -5.562e+02
+Final position: [-0.92714869 -1.04612861 -2.97908791]
+Time used: 185.01 seconds.
+-------------------------Peak 14 -------------------------
+Peak: [-1. -1.  0.]
+iter 1, direction X...
+Fit result: center = -0.9738696403497695
+Fit Statistics: chi-sqr = 2.220e-04,
+                reduce chi-sqr = 4.826e-06
+                Akaike info crit = -6.082e+02
+                Bayesian info crit = -6.006e+02
+iter 1, direction Y...
+Fit result: center = -1.0023979428868104
+Fit Statistics: chi-sqr = 1.050e-04,
+                reduce chi-sqr = 2.283e-06
+                Akaike info crit = -6.457e+02
+                Bayesian info crit = -6.380e+02
+iter 1, direction Z...
+Fit result: center = 0.012061800320264236
+Fit Statistics: chi-sqr = 2.139e-04,
+                reduce chi-sqr = 6.901e-06
+                Akaike info crit = -4.122e+02
+                Bayesian info crit = -4.060e+02
+Position update: [-0.97386964 -1.00239794  0.0120618 ]
+iter 2, direction X...
+Fit result: center = -0.97373383555962
+Fit Statistics: chi-sqr = 1.921e-04,
+                reduce chi-sqr = 4.176e-06
+                Akaike info crit = -6.155e+02
+                Bayesian info crit = -6.078e+02
+iter 2, direction Y...
+Fit result: center = -1.0021894570923842
+Fit Statistics: chi-sqr = 1.105e-04,
+                reduce chi-sqr = 2.402e-06
+                Akaike info crit = -6.431e+02
+                Bayesian info crit = -6.355e+02
+iter 2, direction Z...
+Fit result: center = 0.011491044167559982
+Fit Statistics: chi-sqr = 1.415e-04,
+                reduce chi-sqr = 4.566e-06
+                Akaike info crit = -4.266e+02
+                Bayesian info crit = -4.204e+02
+Final position: [-0.97373384 -1.00218946  0.01149104]
+Time used: 180.69 seconds.
+-------------------------Peak 15 -------------------------
+Peak: [ 0.  0. -1.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 92.86 seconds.
+-------------------------Peak 16 -------------------------
+Peak: [ 0.  0. -2.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 91.40 seconds.
+-------------------------Peak 17 -------------------------
+Peak: [ 1.  1. -2.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 98.47 seconds.
+-------------------------Peak 18 -------------------------
+Peak: [-4. -4. -4.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 91.89 seconds.
+-------------------------Peak 19 -------------------------
+Peak: [ 1.  1. -3.]
+iter 1, direction X...
+Fit result: center = 1.0864761482332481
+Fit Statistics: chi-sqr = 1.097e-04,
+                reduce chi-sqr = 2.676e-06
+                Akaike info crit = -5.736e+02
+                Bayesian info crit = -5.664e+02
+iter 1, direction Y...
+Fit result: center = 0.9661583945426192
+Fit Statistics: chi-sqr = 8.585e-05,
+                reduce chi-sqr = 2.044e-06
+                Akaike info crit = -5.988e+02
+                Bayesian info crit = -5.915e+02
+iter 1, direction Z...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 97.69 seconds.
+-------------------------Peak 20 -------------------------
+Peak: [-4. -4. -3.]
+iter 1, direction X...
+Fit result: center = -3.725453665852906
+Fit Statistics: chi-sqr = 4.996e-06,
+                reduce chi-sqr = 2.271e-07
+                Akaike info crit = -3.941e+02
+                Bayesian info crit = -3.891e+02
+iter 1, direction Y...
+Fit result: center = -3.6836498558636968
+Fit Statistics: chi-sqr = 1.228e-05,
+                reduce chi-sqr = 5.581e-07
+                Akaike info crit = -3.707e+02
+                Bayesian info crit = -3.657e+02
+iter 1, direction Z...
+Fit result: center = -3.309424236143609
+Fit Statistics: chi-sqr = 8.255e-07,
+                reduce chi-sqr = 3.302e-08
+                Akaike info crit = -4.959e+02
+                Bayesian info crit = -4.904e+02
+Position update: [-3.72545367 -3.68364986 -3.30942424]
+iter 2, direction X...
+Fit result: center = -4.057504087798002
+Fit Statistics: chi-sqr = 2.546e-05,
+                reduce chi-sqr = 5.535e-07
+                Akaike info crit = -7.165e+02
+                Bayesian info crit = -7.089e+02
+iter 2, direction Y...
+Fit result: center = -4.086547703843666
+Fit Statistics: chi-sqr = 1.603e-05,
+                reduce chi-sqr = 3.485e-07
+                Akaike info crit = -7.397e+02
+                Bayesian info crit = -7.320e+02
+iter 2, direction Z...
+Fit result: center = -5.000320658643447
+Fit Statistics: chi-sqr = 4.561e-06,
+                reduce chi-sqr = 9.915e-08
+                Akaike info crit = -8.025e+02
+                Bayesian info crit = -7.949e+02
+Position update: [-4.05750409 -4.0865477  -5.00032066]
+iter 3, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 145.50 seconds.
+-------------------------Peak 21 -------------------------
+Peak: [-1. -2. -1.]
+iter 1, direction X...
+Fit result: center = -0.9553555831754008
+Fit Statistics: chi-sqr = 1.400e-04,
+                reduce chi-sqr = 4.119e-06
+                Akaike info crit = -4.674e+02
+                Bayesian info crit = -4.609e+02
+iter 1, direction Y...
+Fit result: center = -1.9658337998818485
+Fit Statistics: chi-sqr = 8.065e-04,
+                reduce chi-sqr = 2.372e-05
+                Akaike info crit = -4.009e+02
+                Bayesian info crit = -3.943e+02
+iter 1, direction Z...
+Fit result: center = -0.9477246034277628
+Fit Statistics: chi-sqr = 1.463e-04,
+                reduce chi-sqr = 3.181e-06
+                Akaike info crit = -6.291e+02
+                Bayesian info crit = -6.214e+02
+Position update: [-0.95535558 -1.9658338  -0.9477246 ]
+iter 2, direction X...
+Fit result: center = -0.9551179516838543
+Fit Statistics: chi-sqr = 3.658e-04,
+                reduce chi-sqr = 1.076e-05
+                Akaike info crit = -4.309e+02
+                Bayesian info crit = -4.244e+02
+iter 2, direction Y...
+Fit result: center = -1.9679237852420224
+Fit Statistics: chi-sqr = 9.443e-04,
+                reduce chi-sqr = 2.951e-05
+                Akaike info crit = -3.717e+02
+                Bayesian info crit = -3.654e+02
+iter 2, direction Z...
+Fit result: center = -0.9448028138903908
+Fit Statistics: chi-sqr = 1.081e-04,
+                reduce chi-sqr = 2.350e-06
+                Akaike info crit = -6.442e+02
+                Bayesian info crit = -6.366e+02
+Final position: [-0.95511795 -1.96792379 -0.94480281]
+Time used: 197.99 seconds.
+-------------------------Peak 22 -------------------------
+Peak: [-2. -3. -2.]
+iter 1, direction X...
+Fit result: center = -1.9264061995477344
+Fit Statistics: chi-sqr = 3.586e-05,
+                reduce chi-sqr = 1.055e-06
+                Akaike info crit = -5.192e+02
+                Bayesian info crit = -5.126e+02
+iter 1, direction Y...
+Fit result: center = -2.9951285768495435
+Fit Statistics: chi-sqr = 9.201e-05,
+                reduce chi-sqr = 2.706e-06
+                Akaike info crit = -4.834e+02
+                Bayesian info crit = -4.768e+02
+iter 1, direction Z...
+Fit result: center = -1.9618165474883091
+Fit Statistics: chi-sqr = 9.661e-05,
+                reduce chi-sqr = 2.100e-06
+                Akaike info crit = -6.498e+02
+                Bayesian info crit = -6.422e+02
+Position update: [-1.9264062  -2.99512858 -1.96181655]
+iter 2, direction X...
+Fit result: center = -1.9250233439332112
+Fit Statistics: chi-sqr = 3.576e-05,
+                reduce chi-sqr = 1.154e-06
+                Akaike info crit = -4.748e+02
+                Bayesian info crit = -4.686e+02
+iter 2, direction Y...
+Fit result: center = -2.997410473291794
+Fit Statistics: chi-sqr = 1.111e-04,
+                reduce chi-sqr = 3.832e-06
+                Akaike info crit = -4.078e+02
+                Bayesian info crit = -4.019e+02
+iter 2, direction Z...
+Fit result: center = -1.9585748665224232
+Fit Statistics: chi-sqr = 9.529e-05,
+                reduce chi-sqr = 2.071e-06
+                Akaike info crit = -6.505e+02
+                Bayesian info crit = -6.429e+02
+Final position: [-1.92502334 -2.99741047 -1.95857487]
+Time used: 170.34 seconds.
+-------------------------Peak 23 -------------------------
+Peak: [-1. -2. -3.]
+iter 1, direction X...
+Fit result: center = -0.9181183285995527
+Fit Statistics: chi-sqr = 1.999e-05,
+                reduce chi-sqr = 5.880e-07
+                Akaike info crit = -5.414e+02
+                Bayesian info crit = -5.348e+02
+iter 1, direction Y...
+Fit result: center = -2.025212143078032
+Fit Statistics: chi-sqr = 9.499e-06,
+                reduce chi-sqr = 2.794e-07
+                Akaike info crit = -5.697e+02
+                Bayesian info crit = -5.631e+02
+iter 1, direction Z...
+Fit result: center = -2.931230161239055
+Fit Statistics: chi-sqr = 3.016e-04,
+                reduce chi-sqr = 6.557e-06
+                Akaike info crit = -5.929e+02
+                Bayesian info crit = -5.853e+02
+Position update: [-0.91811833 -2.02521214 -2.93123016]
+iter 2, direction X...
+Fit result: center = -0.9147177577951519
+Fit Statistics: chi-sqr = 1.745e-05,
+                reduce chi-sqr = 6.232e-07
+                Akaike info crit = -4.535e+02
+                Bayesian info crit = -4.476e+02
+iter 2, direction Y...
+Fit result: center = -2.0259633287292713
+Fit Statistics: chi-sqr = 1.557e-05,
+                reduce chi-sqr = 5.370e-07
+                Akaike info crit = -4.727e+02
+                Bayesian info crit = -4.667e+02
+iter 2, direction Z...
+Fit result: center = -2.930347622138984
+Fit Statistics: chi-sqr = 3.849e-04,
+                reduce chi-sqr = 8.368e-06
+                Akaike info crit = -5.807e+02
+                Bayesian info crit = -5.731e+02
+Final position: [-0.91471776 -2.02596333 -2.93034762]
+Time used: 175.58 seconds.
+-------------------------Peak 24 -------------------------
+Peak: [-2. -3. -3.]
+iter 1, direction X...
+Fit result: center = -1.9320758549543908
+Fit Statistics: chi-sqr = 1.851e-04,
+                reduce chi-sqr = 5.445e-06
+                Akaike info crit = -4.568e+02
+                Bayesian info crit = -4.503e+02
+iter 1, direction Y...
+Fit result: center = -2.982033241990431
+Fit Statistics: chi-sqr = 2.224e-04,
+                reduce chi-sqr = 6.541e-06
+                Akaike info crit = -4.498e+02
+                Bayesian info crit = -4.433e+02
+iter 1, direction Z...
+Fit result: center = -2.9585880939331433
+Fit Statistics: chi-sqr = 3.700e-05,
+                reduce chi-sqr = 8.044e-07
+                Akaike info crit = -6.978e+02
+                Bayesian info crit = -6.902e+02
+Position update: [-1.93207585 -2.98203324 -2.95858809]
+iter 2, direction X...
+Fit result: center = -1.9334476546302726
+Fit Statistics: chi-sqr = 2.958e-04,
+                reduce chi-sqr = 9.243e-06
+                Akaike info crit = -4.135e+02
+                Bayesian info crit = -4.072e+02
+iter 2, direction Y...
+Fit result: center = -2.990527103572734
+Fit Statistics: chi-sqr = 3.748e-04,
+                reduce chi-sqr = 1.171e-05
+                Akaike info crit = -4.050e+02
+                Bayesian info crit = -3.987e+02
+iter 2, direction Z...
+Fit result: center = -2.956672721757996
+Fit Statistics: chi-sqr = 5.315e-05,
+                reduce chi-sqr = 1.155e-06
+                Akaike info crit = -6.797e+02
+                Bayesian info crit = -6.721e+02
+Final position: [-1.93344765 -2.9905271  -2.95667272]
+Time used: 152.26 seconds.
+-------------------------Peak 25 -------------------------
+Peak: [-2. -3. -4.]
+iter 1, direction X...
+Fit result: center = -1.9105529013608737
+Fit Statistics: chi-sqr = 4.456e-05,
+                reduce chi-sqr = 1.311e-06
+                Akaike info crit = -5.109e+02
+                Bayesian info crit = -5.044e+02
+iter 1, direction Y...
+Fit result: center = -3.0067572813015575
+Fit Statistics: chi-sqr = 4.641e-05,
+                reduce chi-sqr = 1.365e-06
+                Akaike info crit = -5.094e+02
+                Bayesian info crit = -5.028e+02
+iter 1, direction Z...
+Fit result: center = -3.9599685428241416
+Fit Statistics: chi-sqr = 1.821e-04,
+                reduce chi-sqr = 3.959e-06
+                Akaike info crit = -6.181e+02
+                Bayesian info crit = -6.105e+02
+Position update: [-1.9105529  -3.00675728 -3.95996854]
+iter 2, direction X...
+Fit result: center = -1.9096357716683994
+Fit Statistics: chi-sqr = 3.549e-05,
+                reduce chi-sqr = 1.224e-06
+                Akaike info crit = -4.455e+02
+                Bayesian info crit = -4.395e+02
+iter 2, direction Y...
+Fit result: center = -3.0055437530329443
+Fit Statistics: chi-sqr = 3.629e-05,
+                reduce chi-sqr = 1.251e-06
+                Akaike info crit = -4.448e+02
+                Bayesian info crit = -4.388e+02
+iter 2, direction Z...
+Fit result: center = -3.9561370530392224
+Fit Statistics: chi-sqr = 1.955e-04,
+                reduce chi-sqr = 4.249e-06
+                Akaike info crit = -6.146e+02
+                Bayesian info crit = -6.070e+02
+Final position: [-1.90963577 -3.00554375 -3.95613705]
+Time used: 176.15 seconds.
+-------------------------Peak 26 -------------------------
+Peak: [-1. -2. -4.]
+iter 1, direction X...
+Fit result: center = -0.9103312953427928
+Fit Statistics: chi-sqr = 5.456e-05,
+                reduce chi-sqr = 1.605e-06
+                Akaike info crit = -5.032e+02
+                Bayesian info crit = -4.967e+02
+iter 1, direction Y...
+Fit result: center = -2.006791907328377
+Fit Statistics: chi-sqr = 3.602e-05,
+                reduce chi-sqr = 1.060e-06
+                Akaike info crit = -5.190e+02
+                Bayesian info crit = -5.125e+02
+iter 1, direction Z...
+Fit result: center = -3.954168424198645
+Fit Statistics: chi-sqr = 1.160e-04,
+                reduce chi-sqr = 2.521e-06
+                Akaike info crit = -6.407e+02
+                Bayesian info crit = -6.331e+02
+Position update: [-0.9103313  -2.00679191 -3.95416842]
+iter 2, direction X...
+Fit result: center = -0.9097918494500503
+Fit Statistics: chi-sqr = 4.522e-05,
+                reduce chi-sqr = 1.559e-06
+                Akaike info crit = -4.375e+02
+                Bayesian info crit = -4.315e+02
+iter 2, direction Y...
+Fit result: center = -2.0039136544308045
+Fit Statistics: chi-sqr = 4.792e-05,
+                reduce chi-sqr = 1.653e-06
+                Akaike info crit = -4.356e+02
+                Bayesian info crit = -4.296e+02
+iter 2, direction Z...
+Fit result: center = -3.9474190102533155
+Fit Statistics: chi-sqr = 1.548e-04,
+                reduce chi-sqr = 3.365e-06
+                Akaike info crit = -6.263e+02
+                Bayesian info crit = -6.186e+02
+Final position: [-0.90979185 -2.00391365 -3.94741901]
+Time used: 154.39 seconds.
+-------------------------Peak 27 -------------------------
+Peak: [-3. -4. -3.]
+iter 1, direction X...
+Fit result: center = -2.923186805040026
+Fit Statistics: chi-sqr = 2.517e-04,
+                reduce chi-sqr = 7.403e-06
+                Akaike info crit = -4.451e+02
+                Bayesian info crit = -4.386e+02
+iter 1, direction Y...
+Fit result: center = -3.9903965238630863
+Fit Statistics: chi-sqr = 1.487e-04,
+                reduce chi-sqr = 4.373e-06
+                Akaike info crit = -4.652e+02
+                Bayesian info crit = -4.586e+02
+iter 1, direction Z...
+Fit result: center = -2.9656835286135133
+Fit Statistics: chi-sqr = 2.058e-04,
+                reduce chi-sqr = 4.475e-06
+                Akaike info crit = -6.120e+02
+                Bayesian info crit = -6.044e+02
+Position update: [-2.92318681 -3.99039652 -2.96568353]
+iter 2, direction X...
+Fit result: center = -2.923141301244463
+Fit Statistics: chi-sqr = 2.747e-04,
+                reduce chi-sqr = 8.861e-06
+                Akaike info crit = -4.034e+02
+                Bayesian info crit = -3.972e+02
+iter 2, direction Y...
+Fit result: center = -3.994555914801154
+Fit Statistics: chi-sqr = 3.646e-04,
+                reduce chi-sqr = 1.176e-05
+                Akaike info crit = -3.935e+02
+                Bayesian info crit = -3.873e+02
+iter 2, direction Z...
+Fit result: center = -2.9637650430294302
+Fit Statistics: chi-sqr = 1.279e-04,
+                reduce chi-sqr = 2.780e-06
+                Akaike info crit = -6.358e+02
+                Bayesian info crit = -6.282e+02
+Final position: [-2.9231413  -3.99455591 -2.96376504]
+Time used: 162.07 seconds.
+-------------------------Peak 28 -------------------------
+Peak: [-1. -2. -2.]
+iter 1, direction X...
+Fit result: center = -0.9279040422644665
+Fit Statistics: chi-sqr = 1.414e-05,
+                reduce chi-sqr = 4.160e-07
+                Akaike info crit = -5.545e+02
+                Bayesian info crit = -5.480e+02
+iter 1, direction Y...
+Fit result: center = -1.98766501816062
+Fit Statistics: chi-sqr = 5.477e-05,
+                reduce chi-sqr = 1.611e-06
+                Akaike info crit = -5.031e+02
+                Bayesian info crit = -4.965e+02
+iter 1, direction Z...
+Fit result: center = -1.947457055477557
+Fit Statistics: chi-sqr = 7.158e-05,
+                reduce chi-sqr = 1.556e-06
+                Akaike info crit = -6.648e+02
+                Bayesian info crit = -6.572e+02
+Position update: [-0.92790404 -1.98766502 -1.94745706]
+iter 2, direction X...
+Fit result: center = -0.927520011284228
+Fit Statistics: chi-sqr = 2.642e-05,
+                reduce chi-sqr = 8.523e-07
+                Akaike info crit = -4.854e+02
+                Bayesian info crit = -4.792e+02
+iter 2, direction Y...
+Fit result: center = -1.99244143623899
+Fit Statistics: chi-sqr = 9.503e-05,
+                reduce chi-sqr = 3.066e-06
+                Akaike info crit = -4.406e+02
+                Bayesian info crit = -4.344e+02
+iter 2, direction Z...
+Fit result: center = -1.9459673966836637
+Fit Statistics: chi-sqr = 9.322e-05,
+                reduce chi-sqr = 2.027e-06
+                Akaike info crit = -6.516e+02
+                Bayesian info crit = -6.440e+02
+Final position: [-0.92752001 -1.99244144 -1.9459674 ]
+Time used: 179.70 seconds.
+-------------------------Peak 29 -------------------------
+Peak: [-3. -4. -4.]
+iter 1, direction X...
+Fit result: center = -2.8911602558826144
+Fit Statistics: chi-sqr = 1.251e-04,
+                reduce chi-sqr = 3.680e-06
+                Akaike info crit = -4.717e+02
+                Bayesian info crit = -4.652e+02
+iter 1, direction Y...
+Fit result: center = -3.8172073204216996
+Fit Statistics: chi-sqr = 2.467e-05,
+                reduce chi-sqr = 9.137e-07
+                Akaike info crit = -4.274e+02
+                Bayesian info crit = -4.216e+02
+iter 1, direction Z...
+Fit result: center = -3.746018692052428
+Fit Statistics: chi-sqr = 9.928e-06,
+                reduce chi-sqr = 3.309e-07
+                Akaike info crit = -5.036e+02
+                Bayesian info crit = -4.975e+02
+Position update: [-2.89116026 -3.81720732 -3.74601869]
+iter 2, direction X...
+Fit result: center = -3.3649826907828024
+Fit Statistics: chi-sqr = 1.810e-06,
+                reduce chi-sqr = 4.764e-08
+                Akaike info crit = -7.043e+02
+                Bayesian info crit = -6.974e+02
+iter 2, direction Y...
+Fit result: center = -4.004515885743602
+Fit Statistics: chi-sqr = 1.855e-05,
+                reduce chi-sqr = 4.882e-07
+                Akaike info crit = -6.066e+02
+                Bayesian info crit = -5.996e+02
+iter 2, direction Z...
+Fit result: center = -3.9472505772138726
+Fit Statistics: chi-sqr = 1.453e-05,
+                reduce chi-sqr = 3.159e-07
+                Akaike info crit = -7.446e+02
+                Bayesian info crit = -7.369e+02
+Position update: [-3.36498269 -4.00451589 -3.94725058]
+iter 3, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 161.71 seconds.
+-------------------------Peak 30 -------------------------
+Peak: [ 0. -1.  0.]
+iter 1, direction X...
+Fit result: center = -0.25761486996741495
+Fit Statistics: chi-sqr = 3.101e-07,
+                reduce chi-sqr = 9.120e-09
+                Akaike info crit = -6.997e+02
+                Bayesian info crit = -6.932e+02
+iter 1, direction Y...
+Fit result: center = -0.6964652642784412
+Fit Statistics: chi-sqr = 3.581e-07,
+                reduce chi-sqr = 1.053e-08
+                Akaike info crit = -6.942e+02
+                Bayesian info crit = -6.877e+02
+iter 1, direction Z...
+Fit result: center = -0.2645149380503742
+Fit Statistics: chi-sqr = 4.449e-07,
+                reduce chi-sqr = 1.648e-08
+                Akaike info crit = -5.518e+02
+                Bayesian info crit = -5.461e+02
+Position update: [-0.25761487 -0.69646526 -0.26451494]
+iter 2, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 118.59 seconds.
+-------------------------Peak 31 -------------------------
+Peak: [ 0. -1. -3.]
+iter 1, direction X...
+Fit result: center = 0.054505580837268267
+Fit Statistics: chi-sqr = 2.045e-04,
+                reduce chi-sqr = 6.015e-06
+                Akaike info crit = -4.530e+02
+                Bayesian info crit = -4.465e+02
+iter 1, direction Y...
+Fit result: center = -0.9788952728782658
+Fit Statistics: chi-sqr = 1.844e-04,
+                reduce chi-sqr = 5.423e-06
+                Akaike info crit = -4.570e+02
+                Bayesian info crit = -4.504e+02
+iter 1, direction Z...
+Fit result: center = -2.949775881516274
+Fit Statistics: chi-sqr = 1.818e-04,
+                reduce chi-sqr = 3.951e-06
+                Akaike info crit = -6.182e+02
+                Bayesian info crit = -6.106e+02
+Position update: [ 0.05450558 -0.97889527 -2.94977588]
+iter 2, direction X...
+Fit result: center = 0.05289300143289831
+Fit Statistics: chi-sqr = 1.141e-04,
+                reduce chi-sqr = 3.459e-06
+                Akaike info crit = -4.615e+02
+                Bayesian info crit = -4.550e+02
+iter 2, direction Y...
+Fit result: center = -0.9846827272194382
+Fit Statistics: chi-sqr = 2.163e-04,
+                reduce chi-sqr = 6.760e-06
+                Akaike info crit = -4.248e+02
+                Bayesian info crit = -4.185e+02
+iter 2, direction Z...
+Fit result: center = -2.946979350507833
+Fit Statistics: chi-sqr = 1.794e-04,
+                reduce chi-sqr = 3.899e-06
+                Akaike info crit = -6.189e+02
+                Bayesian info crit = -6.113e+02
+Final position: [ 0.052893   -0.98468273 -2.94697935]
+Time used: 116.37 seconds.
+-------------------------Peak 32 -------------------------
+Peak: [1. 0. 0.]
+iter 1, direction X...
+Fit result: center = 1.0156398176647483
+Fit Statistics: chi-sqr = 1.185e-05,
+                reduce chi-sqr = 3.485e-07
+                Akaike info crit = -5.613e+02
+                Bayesian info crit = -5.547e+02
+iter 1, direction Y...
+Fit result: center = 0.04891866020272546
+Fit Statistics: chi-sqr = 6.797e-06,
+                reduce chi-sqr = 1.999e-07
+                Akaike info crit = -5.824e+02
+                Bayesian info crit = -5.758e+02
+iter 1, direction Z...
+Fit result: center = 0.05546751444202828
+Fit Statistics: chi-sqr = 1.852e-05,
+                reduce chi-sqr = 4.026e-07
+                Akaike info crit = -7.324e+02
+                Bayesian info crit = -7.248e+02
+Position update: [1.01563982 0.04891866 0.05546751]
+iter 2, direction X...
+Fit result: center = 1.0174850269877533
+Fit Statistics: chi-sqr = 1.672e-05,
+                reduce chi-sqr = 4.644e-07
+                Akaike info crit = -5.795e+02
+                Bayesian info crit = -5.728e+02
+iter 2, direction Y...
+Fit result: center = 0.05176923265993486
+Fit Statistics: chi-sqr = 8.891e-06,
+                reduce chi-sqr = 2.470e-07
+                Akaike info crit = -6.048e+02
+                Bayesian info crit = -5.980e+02
+iter 2, direction Z...
+Fit result: center = 0.05523038213371727
+Fit Statistics: chi-sqr = 1.879e-05,
+                reduce chi-sqr = 4.085e-07
+                Akaike info crit = -7.317e+02
+                Bayesian info crit = -7.241e+02
+Final position: [1.01748503 0.05176923 0.05523038]
+Time used: 252.16 seconds.
+-------------------------Peak 33 -------------------------
+Peak: [1. 1. 0.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 104.18 seconds.
+-------------------------Peak 34 -------------------------
+Peak: [1. 1. 1.]
+iter 1, direction X...
+Fit result: center = 0.9710610814364736
+Fit Statistics: chi-sqr = 1.006e-05,
+                reduce chi-sqr = 3.244e-07
+                Akaike info crit = -5.192e+02
+                Bayesian info crit = -5.130e+02
+iter 1, direction Y...
+Fit result: center = 1.0041315599605007
+Fit Statistics: chi-sqr = 1.272e-05,
+                reduce chi-sqr = 4.102e-07
+                Akaike info crit = -5.110e+02
+                Bayesian info crit = -5.048e+02
+iter 1, direction Z...
+Fit result: center = 1.0124149702269922
+Fit Statistics: chi-sqr = 4.036e-05,
+                reduce chi-sqr = 1.392e-06
+                Akaike info crit = -4.413e+02
+                Bayesian info crit = -4.353e+02
+Position update: [0.97106108 1.00413156 1.01241497]
+iter 2, direction X...
+Fit result: center = 0.9715988272496657
+Fit Statistics: chi-sqr = 1.175e-05,
+                reduce chi-sqr = 3.672e-07
+                Akaike info crit = -5.297e+02
+                Bayesian info crit = -5.233e+02
+iter 2, direction Y...
+Fit result: center = 1.0029877829656977
+Fit Statistics: chi-sqr = 1.173e-05,
+                reduce chi-sqr = 3.667e-07
+                Akaike info crit = -5.297e+02
+                Bayesian info crit = -5.234e+02
+iter 2, direction Z...
+Fit result: center = 1.0101034836008758
+Fit Statistics: chi-sqr = 4.034e-05,
+                reduce chi-sqr = 1.391e-06
+                Akaike info crit = -4.413e+02
+                Bayesian info crit = -4.353e+02
+Final position: [0.97159883 1.00298778 1.01010348]
+Time used: 178.75 seconds.
+-------------------------Peak 35 -------------------------
+Peak: [-3. -2. -3.]
+iter 1, direction X...
+Fit result: center = -2.9330766909000223
+Fit Statistics: chi-sqr = 1.151e-04,
+                reduce chi-sqr = 3.714e-06
+                Akaike info crit = -4.339e+02
+                Bayesian info crit = -4.276e+02
+iter 1, direction Y...
+Fit result: center = -2.0878141441154443
+Fit Statistics: chi-sqr = 7.771e-04,
+                reduce chi-sqr = 2.507e-05
+                Akaike info crit = -3.670e+02
+                Bayesian info crit = -3.608e+02
+iter 1, direction Z...
+Fit result: center = -3.0126168323289217
+Fit Statistics: chi-sqr = 1.002e-04,
+                reduce chi-sqr = 2.177e-06
+                Akaike info crit = -6.480e+02
+                Bayesian info crit = -6.404e+02
+Position update: [-2.93307669 -2.08781414 -3.01261683]
+iter 2, direction X...
+Fit result: center = -2.9182078069958357
+Fit Statistics: chi-sqr = 8.318e-05,
+                reduce chi-sqr = 2.133e-06
+                Akaike info crit = -5.577e+02
+                Bayesian info crit = -5.507e+02
+iter 2, direction Y...
+Fit result: center = -2.099040260330673
+Fit Statistics: chi-sqr = 1.576e-03,
+                reduce chi-sqr = 4.040e-05
+                Akaike info crit = -4.312e+02
+                Bayesian info crit = -4.242e+02
+iter 2, direction Z...
+Fit result: center = -3.033106659748546
+Fit Statistics: chi-sqr = 5.777e-04,
+                reduce chi-sqr = 1.256e-05
+                Akaike info crit = -5.604e+02
+                Bayesian info crit = -5.528e+02
+Position update: [-2.91820781 -2.09904026 -3.03310666]
+iter 3, direction X...
+Fit result: center = -2.9176976892059923
+Fit Statistics: chi-sqr = 1.435e-04,
+                reduce chi-sqr = 3.588e-06
+                Akaike info crit = -5.479e+02
+                Bayesian info crit = -5.407e+02
+iter 3, direction Y...
+Fit result: center = -2.0993349286077407
+Fit Statistics: chi-sqr = 1.452e-03,
+                reduce chi-sqr = 3.629e-05
+                Akaike info crit = -4.460e+02
+                Bayesian info crit = -4.389e+02
+iter 3, direction Z...
+Fit result: center = -3.0332712369413883
+Fit Statistics: chi-sqr = 4.968e-04,
+                reduce chi-sqr = 1.080e-05
+                Akaike info crit = -5.680e+02
+                Bayesian info crit = -5.603e+02
+Final position: [-2.91769769 -2.09933493 -3.03327124]
+Time used: 202.60 seconds.
+-------------------------Peak 36 -------------------------
+Peak: [-2. -1. -3.]
+iter 1, direction X...
+Fit result: center = -1.9514961594318827
+Fit Statistics: chi-sqr = 7.696e-06,
+                reduce chi-sqr = 2.482e-07
+                Akaike info crit = -5.286e+02
+                Bayesian info crit = -5.223e+02
+iter 1, direction Y...
+Fit result: center = -1.1079099953477045
+Fit Statistics: chi-sqr = 2.402e-04,
+                reduce chi-sqr = 7.748e-06
+                Akaike info crit = -4.081e+02
+                Bayesian info crit = -4.019e+02
+iter 1, direction Z...
+Fit result: center = -2.988527888139249
+Fit Statistics: chi-sqr = 7.690e-04,
+                reduce chi-sqr = 1.672e-05
+                Akaike info crit = -5.461e+02
+                Bayesian info crit = -5.385e+02
+Position update: [-1.95149616 -1.10791    -2.98852789]
+iter 2, direction X...
+Fit result: center = -1.9260355905986948
+Fit Statistics: chi-sqr = 2.225e-05,
+                reduce chi-sqr = 5.706e-07
+                Akaike info crit = -6.144e+02
+                Bayesian info crit = -6.073e+02
+iter 2, direction Y...
+Fit result: center = -1.1128493188851285
+Fit Statistics: chi-sqr = 1.432e-04,
+                reduce chi-sqr = 3.671e-06
+                Akaike info crit = -5.343e+02
+                Bayesian info crit = -5.273e+02
+iter 2, direction Z...
+Fit result: center = -3.0537907061162763
+Fit Statistics: chi-sqr = 5.863e-04,
+                reduce chi-sqr = 1.274e-05
+                Akaike info crit = -5.597e+02
+                Bayesian info crit = -5.520e+02
+Position update: [-1.92603559 -1.11284932 -3.05379071]
+iter 3, direction X...
+Fit result: center = -1.9238285254031309
+Fit Statistics: chi-sqr = 2.883e-05,
+                reduce chi-sqr = 7.206e-07
+                Akaike info crit = -6.185e+02
+                Bayesian info crit = -6.114e+02
+iter 3, direction Y...
+Fit result: center = -1.1191238245856545
+Fit Statistics: chi-sqr = 1.585e-04,
+                reduce chi-sqr = 3.962e-06
+                Akaike info crit = -5.435e+02
+                Bayesian info crit = -5.364e+02
+iter 3, direction Z...
+Fit result: center = -3.055764638542698
+Fit Statistics: chi-sqr = 5.169e-04,
+                reduce chi-sqr = 1.124e-05
+                Akaike info crit = -5.660e+02
+                Bayesian info crit = -5.583e+02
+Final position: [-1.92382853 -1.11912382 -3.05576464]
+Time used: 225.63 seconds.
+-------------------------Peak 37 -------------------------
+Peak: [-2. -1. -1.]
+iter 1, direction X...
+Fit result: center = -1.9728636215835091
+Fit Statistics: chi-sqr = 7.341e-04,
+                reduce chi-sqr = 2.531e-05
+                Akaike info crit = -3.455e+02
+                Bayesian info crit = -3.396e+02
+iter 1, direction Y...
+Fit result: center = -1.0768980481221322
+Fit Statistics: chi-sqr = 2.537e-04,
+                reduce chi-sqr = 8.183e-06
+                Akaike info crit = -4.062e+02
+                Bayesian info crit = -4.000e+02
+iter 1, direction Z...
+Fit result: center = -1.0315302722817246
+Fit Statistics: chi-sqr = 1.102e-04,
+                reduce chi-sqr = 2.396e-06
+                Akaike info crit = -6.433e+02
+                Bayesian info crit = -6.356e+02
+Position update: [-1.97286362 -1.07689805 -1.03153027]
+iter 2, direction X...
+Fit result: center = -1.9692437745737914
+Fit Statistics: chi-sqr = 5.830e-04,
+                reduce chi-sqr = 1.619e-05
+                Akaike info crit = -4.374e+02
+                Bayesian info crit = -4.307e+02
+iter 2, direction Y...
+Fit result: center = -1.0806590756087522
+Fit Statistics: chi-sqr = 2.101e-04,
+                reduce chi-sqr = 5.837e-06
+                Akaike info crit = -4.783e+02
+                Bayesian info crit = -4.715e+02
+iter 2, direction Z...
+Fit result: center = -1.0443542240351744
+Fit Statistics: chi-sqr = 2.101e-04,
+                reduce chi-sqr = 4.567e-06
+                Akaike info crit = -6.110e+02
+                Bayesian info crit = -6.034e+02
+Final position: [-1.96924377 -1.08065908 -1.04435422]
+Time used: 179.44 seconds.
+-------------------------Peak 38 -------------------------
+Peak: [-3. -2. -2.]
+iter 1, direction X...
+Fit result: center = -2.947111344359948
+Fit Statistics: chi-sqr = 4.808e-05,
+                reduce chi-sqr = 1.551e-06
+                Akaike info crit = -4.644e+02
+                Bayesian info crit = -4.582e+02
+iter 1, direction Y...
+Fit result: center = -2.0830504134429133
+Fit Statistics: chi-sqr = 3.702e-04,
+                reduce chi-sqr = 1.194e-05
+                Akaike info crit = -3.930e+02
+                Bayesian info crit = -3.868e+02
+iter 1, direction Z...
+Fit result: center = -2.034619820758768
+Fit Statistics: chi-sqr = 2.665e-04,
+                reduce chi-sqr = 5.794e-06
+                Akaike info crit = -5.991e+02
+                Bayesian info crit = -5.915e+02
+Position update: [-2.94711134 -2.08305041 -2.03461982]
+iter 2, direction X...
+Fit result: center = -2.9444364887060206
+Fit Statistics: chi-sqr = 4.782e-05,
+                reduce chi-sqr = 1.259e-06
+                Akaike info crit = -5.668e+02
+                Bayesian info crit = -5.598e+02
+iter 2, direction Y...
+Fit result: center = -2.08499705110221
+Fit Statistics: chi-sqr = 2.332e-04,
+                reduce chi-sqr = 6.136e-06
+                Akaike info crit = -5.003e+02
+                Bayesian info crit = -4.933e+02
+iter 2, direction Z...
+Fit result: center = -2.045709266439177
+Fit Statistics: chi-sqr = 1.446e-04,
+                reduce chi-sqr = 3.143e-06
+                Akaike info crit = -6.297e+02
+                Bayesian info crit = -6.220e+02
+Final position: [-2.94443649 -2.08499705 -2.04570927]
+Time used: 155.17 seconds.
+-------------------------Peak 39 -------------------------
+Peak: [-3. -2. -4.]
+iter 1, direction X...
+Fit result: center = -2.9127525863494523
+Fit Statistics: chi-sqr = 3.461e-05,
+                reduce chi-sqr = 1.117e-06
+                Akaike info crit = -4.759e+02
+                Bayesian info crit = -4.697e+02
+iter 1, direction Y...
+Fit result: center = -2.074454891106715
+Fit Statistics: chi-sqr = 3.990e-05,
+                reduce chi-sqr = 1.287e-06
+                Akaike info crit = -4.710e+02
+                Bayesian info crit = -4.647e+02
+iter 1, direction Z...
+Fit result: center = -4.00945855779095
+Fit Statistics: chi-sqr = 1.633e-04,
+                reduce chi-sqr = 3.550e-06
+                Akaike info crit = -6.236e+02
+                Bayesian info crit = -6.160e+02
+Position update: [-2.91275259 -2.07445489 -4.00945856]
+iter 2, direction X...
+Fit result: center = -2.8957973797843333
+Fit Statistics: chi-sqr = 5.370e-05,
+                reduce chi-sqr = 1.377e-06
+                Akaike info crit = -5.765e+02
+                Bayesian info crit = -5.695e+02
+iter 2, direction Y...
+Fit result: center = -2.1037768540218305
+Fit Statistics: chi-sqr = 6.347e-04,
+                reduce chi-sqr = 1.627e-05
+                Akaike info crit = -4.703e+02
+                Bayesian info crit = -4.633e+02
+iter 2, direction Z...
+Fit result: center = -4.026284030924378
+Fit Statistics: chi-sqr = 2.239e-04,
+                reduce chi-sqr = 4.868e-06
+                Akaike info crit = -6.078e+02
+                Bayesian info crit = -6.002e+02
+Position update: [-2.89579738 -2.10377685 -4.02628403]
+iter 3, direction X...
+Fit result: center = -2.894942245794724
+Fit Statistics: chi-sqr = 7.299e-05,
+                reduce chi-sqr = 1.780e-06
+                Akaike info crit = -5.919e+02
+                Bayesian info crit = -5.847e+02
+iter 3, direction Y...
+Fit result: center = -2.104078225750413
+Fit Statistics: chi-sqr = 6.390e-04,
+                reduce chi-sqr = 1.558e-05
+                Akaike info crit = -4.943e+02
+                Bayesian info crit = -4.871e+02
+iter 3, direction Z...
+Fit result: center = -4.027440146903183
+Fit Statistics: chi-sqr = 3.118e-04,
+                reduce chi-sqr = 6.778e-06
+                Akaike info crit = -5.913e+02
+                Bayesian info crit = -5.836e+02
+Final position: [-2.89494225 -2.10407823 -4.02744015]
+Time used: 196.18 seconds.
+-------------------------Peak 40 -------------------------
+Peak: [-4. -3. -3.]
+iter 1, direction X...
+Fit result: center = -3.9241071771998675
+Fit Statistics: chi-sqr = 4.236e-05,
+                reduce chi-sqr = 1.366e-06
+                Akaike info crit = -4.689e+02
+                Bayesian info crit = -4.626e+02
+iter 1, direction Y...
+Fit result: center = -3.08146397648999
+Fit Statistics: chi-sqr = 5.412e-04,
+                reduce chi-sqr = 1.746e-05
+                Akaike info crit = -3.797e+02
+                Bayesian info crit = -3.735e+02
+iter 1, direction Z...
+Fit result: center = -3.019459310426831
+Fit Statistics: chi-sqr = 1.190e-04,
+                reduce chi-sqr = 2.587e-06
+                Akaike info crit = -6.394e+02
+                Bayesian info crit = -6.318e+02
+Position update: [-3.92410718 -3.08146398 -3.01945931]
+iter 2, direction X...
+Fit result: center = -3.9119398044500127
+Fit Statistics: chi-sqr = 1.550e-04,
+                reduce chi-sqr = 3.975e-06
+                Akaike info crit = -5.309e+02
+                Bayesian info crit = -5.239e+02
+iter 2, direction Y...
+Fit result: center = -3.0970289188620166
+Fit Statistics: chi-sqr = 1.125e-03,
+                reduce chi-sqr = 2.884e-05
+                Akaike info crit = -4.457e+02
+                Bayesian info crit = -4.387e+02
+iter 2, direction Z...
+Fit result: center = -3.0410388732805655
+Fit Statistics: chi-sqr = 2.725e-04,
+                reduce chi-sqr = 5.924e-06
+                Akaike info crit = -5.980e+02
+                Bayesian info crit = -5.903e+02
+Position update: [-3.9119398  -3.09702892 -3.04103887]
+iter 3, direction X...
+Fit result: center = -3.9119190137955497
+Fit Statistics: chi-sqr = 1.350e-04,
+                reduce chi-sqr = 3.376e-06
+                Akaike info crit = -5.505e+02
+                Bayesian info crit = -5.434e+02
+iter 3, direction Y...
+Fit result: center = -3.0970710266363426
+Fit Statistics: chi-sqr = 8.935e-04,
+                reduce chi-sqr = 2.234e-05
+                Akaike info crit = -4.674e+02
+                Bayesian info crit = -4.603e+02
+iter 3, direction Z...
+Fit result: center = -3.041265029686604
+Fit Statistics: chi-sqr = 2.844e-04,
+                reduce chi-sqr = 6.182e-06
+                Akaike info crit = -5.959e+02
+                Bayesian info crit = -5.882e+02
+Final position: [-3.91191901 -3.09707103 -3.04126503]
+Time used: 198.32 seconds.
+-------------------------Peak 41 -------------------------
+Peak: [-2. -1. -4.]
+iter 1, direction X...
+Fit result: center = -1.9191555969741667
+Fit Statistics: chi-sqr = 3.386e-05,
+                reduce chi-sqr = 1.092e-06
+                Akaike info crit = -4.767e+02
+                Bayesian info crit = -4.705e+02
+iter 1, direction Y...
+Fit result: center = -1.0726908357806715
+Fit Statistics: chi-sqr = 7.473e-05,
+                reduce chi-sqr = 2.411e-06
+                Akaike info crit = -4.490e+02
+                Bayesian info crit = -4.428e+02
+iter 1, direction Z...
+Fit result: center = -4.0050437324205905
+Fit Statistics: chi-sqr = 1.195e-04,
+                reduce chi-sqr = 2.598e-06
+                Akaike info crit = -6.392e+02
+                Bayesian info crit = -6.316e+02
+Position update: [-1.9191556  -1.07269084 -4.00504373]
+iter 2, direction X...
+Fit result: center = -1.9018793538669896
+Fit Statistics: chi-sqr = 2.811e-05,
+                reduce chi-sqr = 7.209e-07
+                Akaike info crit = -6.043e+02
+                Bayesian info crit = -5.973e+02
+iter 2, direction Y...
+Fit result: center = -1.1003634699019615
+Fit Statistics: chi-sqr = 4.600e-04,
+                reduce chi-sqr = 1.179e-05
+                Akaike info crit = -4.842e+02
+                Bayesian info crit = -4.771e+02
+iter 2, direction Z...
+Fit result: center = -4.019378080972603
+Fit Statistics: chi-sqr = 1.949e-04,
+                reduce chi-sqr = 4.236e-06
+                Akaike info crit = -6.148e+02
+                Bayesian info crit = -6.071e+02
+Position update: [-1.90187935 -1.10036347 -4.01937808]
+iter 3, direction X...
+Fit result: center = -1.9012928575587962
+Fit Statistics: chi-sqr = 2.358e-05,
+                reduce chi-sqr = 5.750e-07
+                Akaike info crit = -6.428e+02
+                Bayesian info crit = -6.356e+02
+iter 3, direction Y...
+Fit result: center = -1.100374433874657
+Fit Statistics: chi-sqr = 4.186e-04,
+                reduce chi-sqr = 1.021e-05
+                Akaike info crit = -5.133e+02
+                Bayesian info crit = -5.061e+02
+iter 3, direction Z...
+Fit result: center = -4.020111143171515
+Fit Statistics: chi-sqr = 1.653e-04,
+                reduce chi-sqr = 3.594e-06
+                Akaike info crit = -6.230e+02
+                Bayesian info crit = -6.153e+02
+Final position: [-1.90129286 -1.10037443 -4.02011114]
+Time used: 116.37 seconds.
+-------------------------Peak 42 -------------------------
+Peak: [-2. -1. -2.]
+iter 1, direction X...
+Fit result: center = -1.954702826833234
+Fit Statistics: chi-sqr = 4.914e-05,
+                reduce chi-sqr = 1.585e-06
+                Akaike info crit = -4.637e+02
+                Bayesian info crit = -4.574e+02
+iter 1, direction Y...
+Fit result: center = -1.0811700967269984
+Fit Statistics: chi-sqr = 1.489e-04,
+                reduce chi-sqr = 4.804e-06
+                Akaike info crit = -4.249e+02
+                Bayesian info crit = -4.186e+02
+iter 1, direction Z...
+Fit result: center = -2.0299779996067686
+Fit Statistics: chi-sqr = 2.358e-05,
+                reduce chi-sqr = 5.125e-07
+                Akaike info crit = -7.204e+02
+                Bayesian info crit = -7.127e+02
+Position update: [-1.95470283 -1.0811701  -2.029978  ]
+iter 2, direction X...
+Fit result: center = -1.9512484380557507
+Fit Statistics: chi-sqr = 7.969e-05,
+                reduce chi-sqr = 2.154e-06
+                Akaike info crit = -5.312e+02
+                Bayesian info crit = -5.243e+02
+iter 2, direction Y...
+Fit result: center = -1.0822704912049392
+Fit Statistics: chi-sqr = 1.939e-04,
+                reduce chi-sqr = 5.241e-06
+                Akaike info crit = -4.947e+02
+                Bayesian info crit = -4.879e+02
+iter 2, direction Z...
+Fit result: center = -2.040935423424771
+Fit Statistics: chi-sqr = 5.745e-05,
+                reduce chi-sqr = 1.249e-06
+                Akaike info crit = -6.758e+02
+                Bayesian info crit = -6.682e+02
+Final position: [-1.95124844 -1.08227049 -2.04093542]
+Time used: 152.94 seconds.
+-------------------------Peak 43 -------------------------
+Peak: [-4. -3. -4.]
+iter 1, direction X...
+Fit result: center = -3.9050912099792803
+Fit Statistics: chi-sqr = 1.490e-04,
+                reduce chi-sqr = 5.519e-06
+                Akaike info crit = -3.716e+02
+                Bayesian info crit = -3.659e+02
+iter 1, direction Y...
+Fit result: center = -3.0698202127384313
+Fit Statistics: chi-sqr = 5.522e-05,
+                reduce chi-sqr = 1.781e-06
+                Akaike info crit = -4.596e+02
+                Bayesian info crit = -4.534e+02
+iter 1, direction Z...
+Fit result: center = -4.013339874742921
+Fit Statistics: chi-sqr = 2.695e-04,
+                reduce chi-sqr = 8.982e-06
+                Akaike info crit = -3.913e+02
+                Bayesian info crit = -3.852e+02
+Position update: [-3.90509121 -3.06982021 -4.01333987]
+iter 2, direction X...
+Fit result: center = -3.8893360324857835
+Fit Statistics: chi-sqr = 1.033e-04,
+                reduce chi-sqr = 3.332e-06
+                Akaike info crit = -4.377e+02
+                Bayesian info crit = -4.314e+02
+iter 2, direction Y...
+Fit result: center = -3.118566842932606
+Fit Statistics: chi-sqr = 8.039e-04,
+                reduce chi-sqr = 2.061e-05
+                Akaike info crit = -4.602e+02
+                Bayesian info crit = -4.531e+02
+iter 2, direction Z...
+Fit result: center = -4.04001464789771
+Fit Statistics: chi-sqr = 4.791e-04,
+                reduce chi-sqr = 1.409e-05
+                Akaike info crit = -4.207e+02
+                Bayesian info crit = -4.141e+02
+Position update: [-3.88933603 -3.11856684 -4.04001465]
+iter 3, direction X...
+Fit result: center = -3.8882704850121543
+Fit Statistics: chi-sqr = 1.841e-04,
+                reduce chi-sqr = 5.939e-06
+                Akaike info crit = -4.174e+02
+                Bayesian info crit = -4.112e+02
+iter 3, direction Y...
+Fit result: center = -3.1194848140394584
+Fit Statistics: chi-sqr = 9.342e-04,
+                reduce chi-sqr = 2.173e-05
+                Akaike info crit = -5.008e+02
+                Bayesian info crit = -4.934e+02
+iter 3, direction Z...
+Fit result: center = -4.0432219832742735
+Fit Statistics: chi-sqr = 4.804e-04,
+                reduce chi-sqr = 1.456e-05
+                Akaike info crit = -4.083e+02
+                Bayesian info crit = -4.019e+02
+Final position: [-3.88827049 -3.11948481 -4.04322198]
+Time used: 176.83 seconds.
+-------------------------Peak 44 -------------------------
+Peak: [-2. -3. -1.]
+iter 1, direction X...
+Fit result: center = -1.9200408267357785
+Fit Statistics: chi-sqr = 7.872e-06,
+                reduce chi-sqr = 2.315e-07
+                Akaike info crit = -5.768e+02
+                Bayesian info crit = -5.703e+02
+iter 1, direction Y...
+Fit result: center = -2.966487910356772
+Fit Statistics: chi-sqr = 3.144e-05,
+                reduce chi-sqr = 1.084e-06
+                Akaike info crit = -4.495e+02
+                Bayesian info crit = -4.435e+02
+iter 1, direction Z...
+Fit result: center = -0.9296479801078593
+Fit Statistics: chi-sqr = 7.993e-04,
+                reduce chi-sqr = 2.855e-05
+                Akaike info crit = -3.311e+02
+                Bayesian info crit = -3.253e+02
+Position update: [-1.92004083 -2.96648791 -0.92964798]
+iter 2, direction X...
+Fit result: center = -1.9193925589279666
+Fit Statistics: chi-sqr = 7.194e-06,
+                reduce chi-sqr = 2.248e-07
+                Akaike info crit = -5.473e+02
+                Bayesian info crit = -5.410e+02
+iter 2, direction Y...
+Fit result: center = -2.967505006304508
+Fit Statistics: chi-sqr = 3.365e-05,
+                reduce chi-sqr = 1.346e-06
+                Akaike info crit = -3.883e+02
+                Bayesian info crit = -3.829e+02
+iter 2, direction Z...
+Fit result: center = -0.930781858759749
+Fit Statistics: chi-sqr = 2.579e-05,
+                reduce chi-sqr = 9.552e-07
+                Akaike info crit = -4.260e+02
+                Bayesian info crit = -4.202e+02
+Final position: [-1.91939256 -2.96750501 -0.93078186]
+Time used: 147.11 seconds.
+-------------------------Peak 45 -------------------------
+Peak: [-1.  0.  0.]
+iter 1, direction X...
+Fit result: center = -1.012503961657734
+Fit Statistics: chi-sqr = 3.865e-05,
+                reduce chi-sqr = 1.247e-06
+                Akaike info crit = -4.721e+02
+                Bayesian info crit = -4.659e+02
+iter 1, direction Y...
+Fit result: center = -0.054125454369445186
+Fit Statistics: chi-sqr = 1.190e-04,
+                reduce chi-sqr = 3.838e-06
+                Akaike info crit = -4.327e+02
+                Bayesian info crit = -4.265e+02
+iter 1, direction Z...
+Fit result: center = -0.046498549237540446
+Fit Statistics: chi-sqr = 2.489e-04,
+                reduce chi-sqr = 9.218e-06
+                Akaike info crit = -3.557e+02
+                Bayesian info crit = -3.500e+02
+Position update: [-1.01250396 -0.05412545 -0.04649855]
+iter 2, direction X...
+Fit result: center = -1.0117445003979086
+Fit Statistics: chi-sqr = 1.413e-05,
+                reduce chi-sqr = 4.282e-07
+                Akaike info crit = -5.388e+02
+                Bayesian info crit = -5.323e+02
+iter 2, direction Y...
+Fit result: center = -0.05653023496245529
+Fit Statistics: chi-sqr = 4.976e-05,
+                reduce chi-sqr = 1.508e-06
+                Akaike info crit = -4.922e+02
+                Bayesian info crit = -4.858e+02
+iter 2, direction Z...
+Fit result: center = -0.048438680070655625
+Fit Statistics: chi-sqr = 2.453e-04,
+                reduce chi-sqr = 8.457e-06
+                Akaike info crit = -3.817e+02
+                Bayesian info crit = -3.757e+02
+Final position: [-1.0117445  -0.05653023 -0.04843868]
+Time used: 178.41 seconds.
+-------------------------Peak 46 -------------------------
+Peak: [ 0.  0. -4.]
+iter 1, direction X...
+Fit result: center = -0.43990990367425203
+Fit Statistics: chi-sqr = 6.777e-06,
+                reduce chi-sqr = 3.080e-07
+                Akaike info crit = -3.862e+02
+                Bayesian info crit = -3.811e+02
+iter 1, direction Y...
+Fit result: center = -0.425586125114969
+Fit Statistics: chi-sqr = 4.513e-07,
+                reduce chi-sqr = 2.051e-08
+                Akaike info crit = -4.566e+02
+                Bayesian info crit = -4.516e+02
+iter 1, direction Z...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 104.41 seconds.
+-------------------------Peak 47 -------------------------
+Peak: [ 0. -1. -4.]
+iter 1, direction X...
+Fit result: center = 0.09850531113631779
+Fit Statistics: chi-sqr = 1.631e-04,
+                reduce chi-sqr = 5.097e-06
+                Akaike info crit = -4.350e+02
+                Bayesian info crit = -4.286e+02
+iter 1, direction Y...
+Fit result: center = 1.3348432674498107
+Fit Statistics: chi-sqr = 8.966e-05,
+                reduce chi-sqr = 2.637e-06
+                Akaike info crit = -4.844e+02
+                Bayesian info crit = -4.778e+02
+iter 1, direction Z...
+Fit result: center = -3.9175201926231895
+Fit Statistics: chi-sqr = 1.214e-05,
+                reduce chi-sqr = 4.857e-07
+                Akaike info crit = -4.179e+02
+                Bayesian info crit = -4.124e+02
+Position update: [ 0.09850531  1.33484327 -3.91752019]
+iter 2, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 108.89 seconds.
+-------------------------Peak 48 -------------------------
+Peak: [ 1.  0. -3.]
+iter 1, direction X...
+Fit result: center = 1.0593713831109657
+Fit Statistics: chi-sqr = 1.259e-04,
+                reduce chi-sqr = 3.703e-06
+                Akaike info crit = -4.715e+02
+                Bayesian info crit = -4.649e+02
+iter 1, direction Y...
+Fit result: center = 0.021246200387236472
+Fit Statistics: chi-sqr = 9.434e-05,
+                reduce chi-sqr = 2.775e-06
+                Akaike info crit = -4.824e+02
+                Bayesian info crit = -4.759e+02
+iter 1, direction Z...
+Fit result: center = -2.9391920062835224
+Fit Statistics: chi-sqr = 2.437e-04,
+                reduce chi-sqr = 6.768e-06
+                Akaike info crit = -4.723e+02
+                Bayesian info crit = -4.656e+02
+Position update: [ 1.05937138  0.0212462  -2.93919201]
+iter 2, direction X...
+Fit result: center = 1.0608106941654665
+Fit Statistics: chi-sqr = 1.285e-04,
+                reduce chi-sqr = 4.017e-06
+                Akaike info crit = -4.435e+02
+                Bayesian info crit = -4.372e+02
+iter 2, direction Y...
+Fit result: center = 0.01857336398821076
+Fit Statistics: chi-sqr = 1.774e-04,
+                reduce chi-sqr = 5.544e-06
+                Akaike info crit = -4.319e+02
+                Bayesian info crit = -4.256e+02
+iter 2, direction Z...
+Fit result: center = -2.934623057683785
+Fit Statistics: chi-sqr = 2.623e-04,
+                reduce chi-sqr = 7.714e-06
+                Akaike info crit = -4.436e+02
+                Bayesian info crit = -4.370e+02
+Final position: [ 1.06081069  0.01857336 -2.93462306]
+Time used: 108.06 seconds.
+-------------------------Peak 49 -------------------------
+Peak: [-1.  0. -3.]
+iter 1, direction X...
+Fit result: center = -0.9508704171120913
+Fit Statistics: chi-sqr = 1.949e-04,
+                reduce chi-sqr = 6.289e-06
+                Akaike info crit = -4.154e+02
+                Bayesian info crit = -4.092e+02
+iter 1, direction Y...
+Fit result: center = -0.0932301125092207
+Fit Statistics: chi-sqr = 5.870e-04,
+                reduce chi-sqr = 1.894e-05
+                Akaike info crit = -3.769e+02
+                Bayesian info crit = -3.706e+02
+iter 1, direction Z...
+Fit result: center = -3.0083905659821157
+Fit Statistics: chi-sqr = 1.404e-04,
+                reduce chi-sqr = 3.053e-06
+                Akaike info crit = -6.311e+02
+                Bayesian info crit = -6.235e+02
+Position update: [-0.95087042 -0.09323011 -3.00839057]
+iter 2, direction X...
+Fit result: center = -0.9337471349252007
+Fit Statistics: chi-sqr = 1.562e-04,
+                reduce chi-sqr = 4.109e-06
+                Akaike info crit = -5.171e+02
+                Bayesian info crit = -5.101e+02
+iter 2, direction Y...
+Fit result: center = -0.0967869743606341
+Fit Statistics: chi-sqr = 7.175e-04,
+                reduce chi-sqr = 1.888e-05
+                Akaike info crit = -4.530e+02
+                Bayesian info crit = -4.461e+02
+iter 2, direction Z...
+Fit result: center = -3.023054071972796
+Fit Statistics: chi-sqr = 3.642e-04,
+                reduce chi-sqr = 7.918e-06
+                Akaike info crit = -5.835e+02
+                Bayesian info crit = -5.758e+02
+Position update: [-0.93374713 -0.09678697 -3.02305407]
+iter 3, direction X...
+Fit result: center = -0.9339484058651676
+Fit Statistics: chi-sqr = 1.666e-04,
+                reduce chi-sqr = 4.273e-06
+                Akaike info crit = -5.278e+02
+                Bayesian info crit = -5.208e+02
+iter 3, direction Y...
+Fit result: center = -0.09714846018042719
+Fit Statistics: chi-sqr = 7.057e-04,
+                reduce chi-sqr = 1.809e-05
+                Akaike info crit = -4.658e+02
+                Bayesian info crit = -4.587e+02
+iter 3, direction Z...
+Fit result: center = -3.023026626032476
+Fit Statistics: chi-sqr = 3.130e-04,
+                reduce chi-sqr = 6.805e-06
+                Akaike info crit = -5.911e+02
+                Bayesian info crit = -5.834e+02
+Final position: [-0.93394841 -0.09714846 -3.02302663]
+Time used: 210.17 seconds.
+-------------------------Peak 50 -------------------------
+Peak: [ 0. -1. -1.]
+iter 1, direction X...
+Fit result: center = 0.02699968145616582
+Fit Statistics: chi-sqr = 3.587e-04,
+                reduce chi-sqr = 1.055e-05
+                Akaike info crit = -4.317e+02
+                Bayesian info crit = -4.251e+02
+iter 1, direction Y...
+Fit result: center = -0.9662738081980617
+Fit Statistics: chi-sqr = 1.625e-04,
+                reduce chi-sqr = 5.605e-06
+                Akaike info crit = -3.953e+02
+                Bayesian info crit = -3.893e+02
+iter 1, direction Z...
+Fit result: center = -0.951317370288371
+Fit Statistics: chi-sqr = 1.669e-03,
+                reduce chi-sqr = 3.792e-05
+                Akaike info crit = -4.848e+02
+                Bayesian info crit = -4.773e+02
+Position update: [ 0.02699968 -0.96627381 -0.95131737]
+iter 2, direction X...
+Fit result: center = 0.024659076101190124
+Fit Statistics: chi-sqr = 3.603e-04,
+                reduce chi-sqr = 1.060e-05
+                Akaike info crit = -4.315e+02
+                Bayesian info crit = -4.250e+02
+iter 2, direction Y...
+Fit result: center = -0.9661146008044564
+Fit Statistics: chi-sqr = 1.882e-04,
+                reduce chi-sqr = 6.720e-06
+                Akaike info crit = -3.774e+02
+                Bayesian info crit = -3.715e+02
+iter 2, direction Z...
+Fit result: center = -0.9412277073433498
+Fit Statistics: chi-sqr = 1.518e-03,
+                reduce chi-sqr = 3.530e-05
+                Akaike info crit = -4.780e+02
+                Bayesian info crit = -4.706e+02
+Final position: [ 0.02465908 -0.9661146  -0.94122771]
+Time used: 138.91 seconds.
+-------------------------Peak 51 -------------------------
+Peak: [0. 1. 0.]
+iter 1, direction X...
+Fit result: center = -0.01046537988069543
+Fit Statistics: chi-sqr = 5.300e-05,
+                reduce chi-sqr = 1.710e-06
+                Akaike info crit = -4.610e+02
+                Bayesian info crit = -4.548e+02
+iter 1, direction Y...
+Fit result: center = 0.960050258592881
+Fit Statistics: chi-sqr = 2.941e-05,
+                reduce chi-sqr = 9.489e-07
+                Akaike info crit = -4.816e+02
+                Bayesian info crit = -4.754e+02
+iter 1, direction Z...
+Fit result: center = -0.038536289518647376
+Fit Statistics: chi-sqr = 2.247e-05,
+                reduce chi-sqr = 4.885e-07
+                Akaike info crit = -7.228e+02
+                Bayesian info crit = -7.151e+02
+Position update: [-0.01046538  0.96005026 -0.03853629]
+iter 2, direction X...
+Fit result: center = -0.007801411913348934
+Fit Statistics: chi-sqr = 4.693e-05,
+                reduce chi-sqr = 1.422e-06
+                Akaike info crit = -4.944e+02
+                Bayesian info crit = -4.879e+02
+iter 2, direction Y...
+Fit result: center = 0.9605004263773348
+Fit Statistics: chi-sqr = 3.600e-05,
+                reduce chi-sqr = 1.091e-06
+                Akaike info crit = -5.042e+02
+                Bayesian info crit = -4.977e+02
+iter 2, direction Z...
+Fit result: center = -0.04013869282492142
+Fit Statistics: chi-sqr = 2.395e-05,
+                reduce chi-sqr = 5.207e-07
+                Akaike info crit = -7.196e+02
+                Bayesian info crit = -7.119e+02
+Final position: [-0.00780141  0.96050043 -0.04013869]
+Time used: 209.36 seconds.
+-------------------------Peak 52 -------------------------
+Peak: [-1.  0. -4.]
+iter 1, direction X...
+Fit result: center = -0.9283857920846571
+Fit Statistics: chi-sqr = 1.061e-04,
+                reduce chi-sqr = 3.423e-06
+                Akaike info crit = -4.367e+02
+                Bayesian info crit = -4.305e+02
+iter 1, direction Y...
+Fit result: center = -0.0839455373660736
+Fit Statistics: chi-sqr = 7.985e-05,
+                reduce chi-sqr = 2.576e-06
+                Akaike info crit = -4.467e+02
+                Bayesian info crit = -4.405e+02
+iter 1, direction Z...
+Fit result: center = -4.004443469392759
+Fit Statistics: chi-sqr = 9.106e-05,
+                reduce chi-sqr = 3.642e-06
+                Akaike info crit = -3.595e+02
+                Bayesian info crit = -3.540e+02
+Position update: [-0.92838579 -0.08394554 -4.00444347]
+iter 2, direction X...
+Fit result: center = -0.9013487837528578
+Fit Statistics: chi-sqr = 1.750e-04,
+                reduce chi-sqr = 4.488e-06
+                Akaike info crit = -5.257e+02
+                Bayesian info crit = -5.187e+02
+iter 2, direction Y...
+Fit result: center = -0.10648997036281525
+Fit Statistics: chi-sqr = 1.779e-04,
+                reduce chi-sqr = 4.943e-06
+                Akaike info crit = -4.849e+02
+                Bayesian info crit = -4.782e+02
+iter 2, direction Z...
+Fit result: center = -4.025455690359374
+Fit Statistics: chi-sqr = 1.696e-04,
+                reduce chi-sqr = 6.283e-06
+                Akaike info crit = -3.676e+02
+                Bayesian info crit = -3.619e+02
+Position update: [-0.90134878 -0.10648997 -4.02545569]
+iter 3, direction X...
+Fit result: center = -0.9008634085773704
+Fit Statistics: chi-sqr = 2.315e-04,
+                reduce chi-sqr = 5.646e-06
+                Akaike info crit = -5.400e+02
+                Bayesian info crit = -5.328e+02
+iter 3, direction Y...
+Fit result: center = -0.10667075937965527
+Fit Statistics: chi-sqr = 2.492e-04,
+                reduce chi-sqr = 7.121e-06
+                Akaike info crit = -4.585e+02
+                Bayesian info crit = -4.518e+02
+iter 3, direction Z...
+Fit result: center = -4.025547429570912
+Fit Statistics: chi-sqr = 1.722e-04,
+                reduce chi-sqr = 6.379e-06
+                Akaike info crit = -3.671e+02
+                Bayesian info crit = -3.614e+02
+Final position: [-0.90086341 -0.10667076 -4.02554743]
+Time used: 139.07 seconds.
+-------------------------Peak 53 -------------------------
+Peak: [-3. -2. -1.]
+iter 1, direction X...
+Fit result: center = -3.0087594930758494
+Fit Statistics: chi-sqr = 1.796e-03,
+                reduce chi-sqr = 6.195e-05
+                Akaike info crit = -3.160e+02
+                Bayesian info crit = -3.100e+02
+iter 1, direction Y...
+Fit result: center = -2.0634297931044214
+Fit Statistics: chi-sqr = 3.069e-03,
+                reduce chi-sqr = 9.901e-05
+                Akaike info crit = -3.190e+02
+                Bayesian info crit = -3.127e+02
+iter 1, direction Z...
+Fit result: center = -0.9960741290545702
+Fit Statistics: chi-sqr = 1.908e-04,
+                reduce chi-sqr = 6.814e-06
+                Akaike info crit = -3.770e+02
+                Bayesian info crit = -3.711e+02
+Position update: [-3.00875949 -2.06342979 -0.99607413]
+iter 2, direction X...
+Fit result: center = -3.0030540805822086
+Fit Statistics: chi-sqr = 7.828e-03,
+                reduce chi-sqr = 2.796e-04
+                Akaike info crit = -2.581e+02
+                Bayesian info crit = -2.522e+02
+iter 2, direction Y...
+Fit result: center = -2.0598434712151388
+Fit Statistics: chi-sqr = 6.489e-03,
+                reduce chi-sqr = 1.966e-04
+                Akaike info crit = -3.120e+02
+                Bayesian info crit = -3.056e+02
+iter 2, direction Z...
+Fit result: center = -0.9927922653739405
+Fit Statistics: chi-sqr = 1.016e-03,
+                reduce chi-sqr = 3.764e-05
+                Akaike info crit = -3.121e+02
+                Bayesian info crit = -3.064e+02
+Final position: [-3.00305408 -2.05984347 -0.99279227]
+Time used: 116.95 seconds.
+-------------------------Peak 54 -------------------------
+Peak: [ 0. -1. -2.]
+iter 1, direction X...
+Fit result: center = 0.07246046822614713
+Fit Statistics: chi-sqr = 9.022e-05,
+                reduce chi-sqr = 2.910e-06
+                Akaike info crit = -4.424e+02
+                Bayesian info crit = -4.362e+02
+iter 1, direction Y...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 106.53 seconds.
+-------------------------Peak 55 -------------------------
+Peak: [ 0.  1. -3.]
+iter 1, direction X...
+Fit result: center = 0.06331349617145539
+Fit Statistics: chi-sqr = 4.212e-04,
+                reduce chi-sqr = 1.359e-05
+                Akaike info crit = -3.885e+02
+                Bayesian info crit = -3.823e+02
+iter 1, direction Y...
+Fit result: center = 0.9109641281333348
+Fit Statistics: chi-sqr = 3.848e-04,
+                reduce chi-sqr = 1.241e-05
+                Akaike info crit = -3.916e+02
+                Bayesian info crit = -3.854e+02
+iter 1, direction Z...
+Fit result: center = -3.008439408392713
+Fit Statistics: chi-sqr = 2.873e-04,
+                reduce chi-sqr = 8.210e-06
+                Akaike info crit = -4.529e+02
+                Bayesian info crit = -4.463e+02
+Position update: [ 0.0633135   0.91096413 -3.00843941]
+iter 2, direction X...
+Fit result: center = 0.06759834923700407
+Fit Statistics: chi-sqr = 1.209e-04,
+                reduce chi-sqr = 3.101e-06
+                Akaike info crit = -5.416e+02
+                Bayesian info crit = -5.346e+02
+iter 2, direction Y...
+Fit result: center = 0.910231163516626
+Fit Statistics: chi-sqr = 2.758e-04,
+                reduce chi-sqr = 7.072e-06
+                Akaike info crit = -5.062e+02
+                Bayesian info crit = -4.991e+02
+iter 2, direction Z...
+Fit result: center = -3.0170532515730275
+Fit Statistics: chi-sqr = 1.919e-04,
+                reduce chi-sqr = 5.186e-06
+                Akaike info crit = -4.952e+02
+                Bayesian info crit = -4.883e+02
+Final position: [ 0.06759835  0.91023116 -3.01705325]
+Time used: 128.92 seconds.
+-------------------------Peak 56 -------------------------
+Peak: [-1.  0. -1.]
+iter 1, direction X...
+Fit result: center = -0.9898170686748828
+Fit Statistics: chi-sqr = 8.463e-05,
+                reduce chi-sqr = 3.255e-06
+                Akaike info crit = -3.754e+02
+                Bayesian info crit = -3.697e+02
+iter 1, direction Y...
+Fit result: center = -0.07588433857848907
+Fit Statistics: chi-sqr = 1.062e-04,
+                reduce chi-sqr = 3.426e-06
+                Akaike info crit = -4.367e+02
+                Bayesian info crit = -4.305e+02
+iter 1, direction Z...
+Fit result: center = -1.0292347973246039
+Fit Statistics: chi-sqr = 1.625e-03,
+                reduce chi-sqr = 3.779e-05
+                Akaike info crit = -4.748e+02
+                Bayesian info crit = -4.674e+02
+Position update: [-0.98981707 -0.07588434 -1.0292348 ]
+iter 2, direction X...
+Fit result: center = -0.9790651495652161
+Fit Statistics: chi-sqr = 1.423e-04,
+                reduce chi-sqr = 4.591e-06
+                Akaike info crit = -4.264e+02
+                Bayesian info crit = -4.202e+02
+iter 2, direction Y...
+Fit result: center = -0.07672689560538506
+Fit Statistics: chi-sqr = 1.224e-04,
+                reduce chi-sqr = 3.496e-06
+                Akaike info crit = -4.862e+02
+                Bayesian info crit = -4.796e+02
+iter 2, direction Z...
+Fit result: center = -1.0293926396892152
+Fit Statistics: chi-sqr = 1.200e-03,
+                reduce chi-sqr = 2.791e-05
+                Akaike info crit = -4.890e+02
+                Bayesian info crit = -4.816e+02
+Final position: [-0.97906515 -0.0767269  -1.02939264]
+Time used: 175.20 seconds.
+-------------------------Peak 57 -------------------------
+Peak: [-3. -3. -5.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 94.70 seconds.
+-------------------------Peak 58 -------------------------
+Peak: [-3. -4. -2.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 91.81 seconds.
+-------------------------Peak 59 -------------------------
+Peak: [-2. -2. -5.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 95.42 seconds.
+-------------------------Peak 60 -------------------------
+Peak: [-3. -3. -1.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 97.00 seconds.
+-------------------------Peak 61 -------------------------
+Peak: [-1.  0. -2.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 92.17 seconds.
+-------------------------Peak 62 -------------------------
+Peak: [-1. -2.  0.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 97.40 seconds.
+-------------------------Peak 63 -------------------------
+Peak: [-4. -3. -2.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 92.01 seconds.
+-------------------------Peak 64 -------------------------
+Peak: [-2. -1.  0.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 91.32 seconds.
+-------------------------Peak 65 -------------------------
+Peak: [-2. -2.  0.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Time used: 92.43 seconds.
+-------------------------Peak 66 -------------------------
+Peak: [-2. -3. -5.]
+iter 1, direction X...
+Data not available or too much noise... Stop searching for this peak.
+Reach the maximum 20 succeeding bad peaks, stop searching...
+============================================================
+Total time collapsed: 10103.49 seconds.
+list of peaks that are not found: [10, 14, 15, 16, 17, 18, 19, 28, 29, 32, 45, 46, 53, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65]
+=========================================================END
+[array([-1.94600213, -2.03372255, -1.98464841]), array([-1.90015773, -2.05291386, -3.97565244]), array([ 0.08096996, -0.02970833, -2.97119249]), array([-0.96977624, -1.02166575, -0.98935489]), array([-2.90809053, -3.04781949, -2.99179279]), array([-1.95534948, -2.02069408, -1.00177501]), array([-2.93561643, -3.03155491, -1.99877727]), array([-0.95386765, -1.02782867, -2.00045812]), array([-0.90222264, -1.05439033, -3.97265677]), array([-2.89017902, -3.05340857, -3.979472  ]), array([-1.91675893, -2.04463281, -2.98174206]), array([-0.92714869, -1.04612861, -2.97908791]), array([-0.97373384, -1.00218946,  0.01149104]), array([-0.95511795, -1.96792379, -0.94480281]), array([-1.92502334, -2.99741047, -1.95857487]), array([-0.91471776, -2.02596333, -2.93034762]), array([-1.93344765, -2.9905271 , -2.95667272]), array([-1.90963577, -3.00554375, -3.95613705]), array([-0.90979185, -2.00391365, -3.94741901]), array([-2.9231413 , -3.99455591, -2.96376504]), array([-0.92752001, -1.99244144, -1.9459674 ]), array([ 0.052893  , -0.98468273, -2.94697935]), array([1.01748503, 0.05176923, 0.05523038]), array([0.97159883, 1.00298778, 1.01010348]), array([-2.91769769, -2.09933493, -3.03327124]), array([-1.92382853, -1.11912382, -3.05576464]), array([-1.96924377, -1.08065908, -1.04435422]), array([-2.94443649, -2.08499705, -2.04570927]), array([-2.89494225, -2.10407823, -4.02744015]), array([-3.91191901, -3.09707103, -3.04126503]), array([-1.90129286, -1.10037443, -4.02011114]), array([-1.95124844, -1.08227049, -2.04093542]), array([-3.88827049, -3.11948481, -4.04322198]), array([-1.91939256, -2.96750501, -0.93078186]), array([-1.0117445 , -0.05653023, -0.04843868]), array([ 1.06081069,  0.01857336, -2.93462306]), array([-0.93394841, -0.09714846, -3.02302663]), array([ 0.02465908, -0.9661146 , -0.94122771]), array([-0.00780141,  0.96050043, -0.04013869]), array([-0.90086341, -0.10667076, -4.02554743]), array([-3.00305408, -2.05984347, -0.99279227]), array([ 0.06759835,  0.91023116, -3.01705325]), array([-0.97906515, -0.0767269 , -1.02939264])]
